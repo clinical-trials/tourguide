@@ -94,7 +94,7 @@ export default function Home() {
         <section id="routes" className="section shell">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">01 / CHOOSE YOUR CHAPTER</p>
+              <p className="eyebrow">01 / CHOOSE YOUR BRANCH</p>
               <h2>
                 TWO WAYS IN.
                 <br />
@@ -103,14 +103,14 @@ export default function Home() {
             </div>
             <p>
               Start with the streets that shaped San Francisco. Or follow the
-              next wave south. Each part is a complete tour, booked separately.
+              next wave south. Each branch is a complete tour, booked separately.
             </p>
           </div>
           <div className="route-cards">
             <article className="route-card">
               <div className="route-top">
                 <span className="route-letter">A</span>
-                <span className="eyebrow">MORNING / 8:30 AM–12:00 PM</span>
+                <span className="eyebrow">BRANCH A / 8:30 AM–12:00 PM</span>
               </div>
               <h3>
                 OLD SOUL.
@@ -162,14 +162,14 @@ export default function Home() {
               <div className="route-bottom">
                 <span>$195 / adult</span>
                 <a href="/?part=A#book">
-                  Choose morning <ArrowUpRight size={20} />
+                  Choose Branch A <ArrowUpRight size={20} />
                 </a>
               </div>
             </article>
             <article className="route-card route-card-dark">
               <div className="route-top">
                 <span className="route-letter">B</span>
-                <span className="eyebrow">AFTERNOON / 2:00–5:30 PM</span>
+                <span className="eyebrow">BRANCH B / 2:00–5:30 PM</span>
               </div>
               <h3>
                 BUILDERS.
@@ -220,7 +220,7 @@ export default function Home() {
               <div className="route-bottom">
                 <span>$195 / adult</span>
                 <a href="/?part=B#book">
-                  Choose afternoon <ArrowUpRight size={20} />
+                  Choose Branch B <ArrowUpRight size={20} />
                 </a>
               </div>
             </article>
@@ -281,8 +281,8 @@ export default function Home() {
               <summary>Where do we meet and finish?</summary>
               <p>
                 Both tours begin in Fisherman’s Wharf. The exact meeting point
-                will be published before reservations open. Part A finishes near
-                the Ferry Building; Part B near Oracle Park.
+                will be published before reservations open. Branch A finishes near
+                the Ferry Building; Branch B near Oracle Park.
               </p>
             </details>
             <details>

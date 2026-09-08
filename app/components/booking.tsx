@@ -185,10 +185,10 @@ export default function Booking() {
                 <RadioGroupItem
                   value="A"
                   disabled={!canBook(date, 'A')}
-                  aria-label="Part A morning"
+                  aria-label="Branch A morning"
                 />
                 <span>
-                  <strong>Part A · Morning</strong>
+                  <strong>Branch A · Morning</strong>
                   <small>8:30 AM–12:00 PM</small>
                 </span>
                 <span className="slot-tag">
@@ -201,10 +201,10 @@ export default function Booking() {
                 <RadioGroupItem
                   value="B"
                   disabled={!canBook(date, 'B')}
-                  aria-label="Part B afternoon"
+                  aria-label="Branch B afternoon"
                 />
                 <span>
-                  <strong>Part B · Afternoon</strong>
+                  <strong>Branch B · Afternoon</strong>
                   <small>2:00–5:30 PM</small>
                 </span>
                 <span className="slot-tag">

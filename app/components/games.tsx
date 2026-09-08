@@ -53,7 +53,7 @@ export default function Games() {
       <div>
         <p className="eyebrow">EXTRA INNINGS / ORACLE PARK</p>
         <h2>MAKE A DAY OF IT.</h2>
-        <p>Finish Part B near the ballpark, then follow the Giants.</p>
+        <p>Finish Branch B near the ballpark, then follow the Giants.</p>
         <label className="schedule-date">
           Game day{' '}
           <input
