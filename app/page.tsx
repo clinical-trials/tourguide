@@ -8,6 +8,8 @@ import {
 } from 'lucide-react';
 import Booking from './components/booking';
 import Games from './components/games';
+import PixelPhoto from './components/pixel-photo';
+import PixelMark from './components/pixel-mark';
 export default function Home() {
   return (
     <>
@@ -21,7 +23,9 @@ export default function Home() {
       </div>
       <header className="header shell">
         <a className="brand" href="/" aria-label="AI SF Tour home">
-          <span className="brand-mark">↗</span>
+          <span className="brand-mark">
+            <PixelMark />
+          </span>
           <span>
             AI SF<span className="brand-sub">TOUR</span>
           </span>
@@ -35,51 +39,41 @@ export default function Home() {
         </nav>
       </header>
       <main id="main">
-        <section className="hero shell">
-          <div className="hero-story">
-            <p className="eyebrow">
-              <span className="live-dot" /> A CONTEMPORARY SAN FRANCISCO TOUR
-            </p>
-            <h1>
-              THE CITY.
-              <br />
-              BEYOND THE
-              <br />
-              <span>PROMPT.</span>
-            </h1>
-            <p className="hero-lead">
-              Get out of Fisherman’s Wharf. Meet the neighborhoods, people, and
-              ideas shaping what comes next.
-            </p>
-            <div className="hero-tags">
-              <span>
-                <Footprints size={17} /> Walk the city
-              </span>
-              <span>
-                <TramFront size={17} /> Ride Muni
-              </span>
-              <span>
-                <Clock3 size={17} /> 3½ hours
-              </span>
+        <div className="hero-stage">
+          <section className="hero shell">
+            <div className="hero-story">
+              <p className="eyebrow">
+                <span className="live-dot" /> A CONTEMPORARY SAN FRANCISCO TOUR
+              </p>
+              <h1>
+                THE CITY.
+                <br />
+                BEYOND THE
+                <br />
+                <span>PROMPT.</span>
+              </h1>
+              <p className="hero-lead">
+                Get out of Fisherman’s Wharf. Meet the neighborhoods, people,
+                and ideas shaping what comes next.
+              </p>
+              <div className="hero-tags">
+                <span>
+                  <Footprints size={17} /> Walk the city
+                </span>
+                <span>
+                  <TramFront size={17} /> Ride Muni
+                </span>
+                <span>
+                  <Clock3 size={17} /> 3½ hours
+                </span>
+              </div>
+              <PixelPhoto />
             </div>
-            <figure className="hero-photo">
-              <img
-                src="/san-francisco.jpg"
-                alt="A cable car on California Street in San Francisco at night"
-                width="6016"
-                height="3718"
-                fetchPriority="high"
-              />
-              <figcaption>
-                <span>LOCAL STREETS. GLOBAL IDEAS.</span>
-                <ArrowUpRight size={30} />
-              </figcaption>
-            </figure>
-          </div>
-          <aside id="book" className="booking-wrap">
-            <Booking />
-          </aside>
-        </section>
+            <aside id="book" className="booking-wrap">
+              <Booking />
+            </aside>
+          </section>
+        </div>
         <div className="route-ticker">
           <span>NORTH BEACH</span>
           <span>↗</span>
@@ -103,7 +97,8 @@ export default function Home() {
             </div>
             <p>
               Start with the streets that shaped San Francisco. Or follow the
-              next wave south. Each branch is a complete tour, booked separately.
+              next wave south. Each branch is a complete tour, booked
+              separately.
             </p>
           </div>
           <div className="route-cards">
@@ -234,7 +229,7 @@ export default function Home() {
         <section className="city-note">
           <div className="shell city-note-inner">
             <span className="giant-arrow" aria-hidden="true">
-              ↗
+              <PixelMark />
             </span>
             <div>
               <p className="eyebrow">THE THROUGH-LINE</p>
@@ -281,8 +276,8 @@ export default function Home() {
               <summary>Where do we meet and finish?</summary>
               <p>
                 Both tours begin in Fisherman’s Wharf. The exact meeting point
-                will be published before reservations open. Branch A finishes near
-                the Ferry Building; Branch B near Oracle Park.
+                will be published before reservations open. Branch A finishes
+                near the Ferry Building; Branch B near Oracle Park.
               </p>
             </details>
             <details>
@@ -360,7 +355,7 @@ export default function Home() {
             >
               CC BY-SA 4.0
             </a>{' '}
-            · Cropped · Cable cars not included
+            · Cropped and pixel-treated · Cable cars not included
           </span>
         </div>
       </footer>
