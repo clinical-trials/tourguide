@@ -170,7 +170,9 @@ export default function Home() {
               <h3>
                 BUILDERS.
                 <br />
-                BALLPARKS. BAY.
+                BALLERS.
+                <br />
+                &amp; THE BAY.
               </h3>
               <p>
                 A southbound Muni ride into the neighborhoods where industrial
