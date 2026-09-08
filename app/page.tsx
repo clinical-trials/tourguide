@@ -424,8 +424,8 @@ export default function Home() {
               <summary>What if my plans or the weather change?</summary>
               <p>
                 Booking and cancellation terms will be published before ticket
-                sales open. Muni service, events, weather, and site access can
-                affect the route.
+                sales open. Tour tickets are typically refundable. Muni service,
+                events, weather, and site access can affect the route.
               </p>
             </details>
           </div>
