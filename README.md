@@ -8,7 +8,7 @@ AI SF Tour — a contemporary San Francisco walking-and-Muni tour website.
 - **Branch B — BUILDERS. BALLERS. & THE BAY.:** Dogpatch, the builder scene, Chase Center, OpenAI's neighborhood and Oracle Park. 2–5:30 PM.
 - **Branch C:** A separate sunny-day west-side special: Ocean Beach, Golden Gate Park's Japanese Tea Garden, Haight-Ashbury and Japantown. Dates, duration and price remain to be announced. The guide confirms sunny, fog-free conditions at Ocean Beach before departure.
 
-Branches A and B are offered Tuesday–Sunday at $195 per adult, ages 16+, with an optional $20 guided Muni return to Fisherman's Wharf. South Bay locations are discussed as stories, not visited.
+Branches A and B are offered Tuesday–Sunday at $195 per adult, ages 16+, with an optional $40 guided Muni return to Fisherman's Wharf. South Bay locations are discussed as stories, not visited.
 
 ## Development
 

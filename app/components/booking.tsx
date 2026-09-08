@@ -10,7 +10,14 @@ import {
 import { Calendar } from '@/components/ui/calendar';
 import { Checkbox } from '@/components/ui/checkbox';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { PARTS, quote, sfDate, canBook, CAPACITY } from '@/lib/booking.mjs';
+import {
+  PARTS,
+  quote,
+  sfDate,
+  canBook,
+  CAPACITY,
+  RETURN_PRICE_CENTS,
+} from '@/lib/booking.mjs';
 import { registerBookingTools } from '@/lib/webmcp.mjs';
 type Availability = {
   enabled: boolean;
@@ -245,7 +252,10 @@ export default function Booking() {
               />
               <span>
                 <strong>Take me back to the Wharf</strong>
-                <small>Guided Muni return · +$20/person · ~45 min extra</small>
+                <small>
+                  Guided Muni return · +${RETURN_PRICE_CENTS / 100}/person · ~45
+                  min extra
+                </small>
               </span>
             </label>
             <div className="booking-total">
@@ -302,7 +312,9 @@ export default function Booking() {
               {back && (
                 <div>
                   <dt>Guided return</dt>
-                  <dd>{guests} × $20</dd>
+                  <dd>
+                    {guests} × ${RETURN_PRICE_CENTS / 100}
+                  </dd>
                 </div>
               )}
               <div>

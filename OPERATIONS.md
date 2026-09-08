@@ -8,7 +8,7 @@ This site is a private prelaunch review. It does not accept payment until all re
 - Above age 15 means 16+. Purchaser explicitly confirms age for every guest.
 - Capacity eight, no minimum group size enforced. Trial at 4–6 before confirming capacity.
 - Regular Muni day pass included. Food/drinks, cable cars, attraction admissions and game tickets excluded.
-- Guided return is $20 per person and starts after the tour. Allow about 45 minutes; delays possible.
+- Guided return is $40 per person and starts after the tour. Allow about 45 minutes; delays possible.
 - Online reservations close one hour before departure and open at most 180 days ahead.
 - Whole-dollar USD prices are charged as displayed. Confirm tax treatment and all inclusions before selling.
 
@@ -34,7 +34,7 @@ Stripe-hosted Checkout collects customer payment/contact details. The app stores
 
 ## Acceptance checks before live sales
 
-Use Stripe test mode: successful payment, declined card, expired checkout, cancelled navigation, duplicated webhook, full/partial refund, two simultaneous requests for final places, age unchecked, Monday, past time, winter DST date, and two-party $430 order with returns. Ensure paid orders remain confirmed if the guest closes the browser. Send a Stripe webhook test and verify a 2xx response from the deployed endpoint. Change to live secrets only after test orders and webhook delivery work and customer-facing policies are final.
+Use Stripe test mode: successful payment, declined card, expired checkout, cancelled navigation, duplicated webhook, full/partial refund, two simultaneous requests for final places, age unchecked, Monday, past time, winter DST date, and two-party $470 order with returns. Ensure paid orders remain confirmed if the guest closes the browser. Send a Stripe webhook test and verify a 2xx response from the deployed endpoint. Change to live secrets only after test orders and webhook delivery work and customer-facing policies are final.
 
 A returned success URL does not confirm payment. The server retrieves the session and checks paid status, USD currency, exact stored total and booking identity. Stripe card details never pass through this app.
 

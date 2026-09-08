@@ -64,7 +64,9 @@ export async function POST(req: Request) {
     'metadata[age_confirmed]': 'true',
     'payment_intent_data[metadata][booking_id]': id,
     'line_items[0][price_data][currency]': 'usd',
-    'line_items[0][price_data][unit_amount]': '19500',
+    'line_items[0][price_data][unit_amount]': String(
+      booking.tour / booking.guests,
+    ),
     'line_items[0][price_data][product_data][name]': `AI SF Tour — ${PARTS[booking.part].label}`,
     'line_items[0][price_data][product_data][description]': `${booking.date} · ${PARTS[booking.part].time} Pacific · Ages 16+ · Meet: ${c.meeting}`,
     'line_items[0][quantity]': String(booking.guests),
@@ -72,7 +74,10 @@ export async function POST(req: Request) {
   });
   if (booking.returnToWharf) {
     params.set('line_items[1][price_data][currency]', 'usd');
-    params.set('line_items[1][price_data][unit_amount]', '2000');
+    params.set(
+      'line_items[1][price_data][unit_amount]',
+      String(booking.return / booking.guests),
+    );
     params.set(
       'line_items[1][price_data][product_data][name]',
       'Guided Muni return to Fisherman’s Wharf',

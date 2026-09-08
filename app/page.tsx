@@ -11,6 +11,7 @@ import Booking from './components/booking';
 import Games from './components/games';
 import PixelPhoto from './components/pixel-photo';
 import PixelMark from './components/pixel-mark';
+import { RETURN_PRICE_CENTS } from '@/lib/booking.mjs';
 export default function Home() {
   return (
     <>
@@ -361,9 +362,10 @@ export default function Home() {
             <details>
               <summary>Can you get me back to the Wharf?</summary>
               <p>
-                For Branch A or B, add a guided Muni return for $20 per person.
-                Allow around 45 extra minutes after the tour. It uses your
-                included day pass and is not a private vehicle transfer.
+                For Branch A or B, add a guided Muni return for $
+                {RETURN_PRICE_CENTS / 100} per person. Allow around 45 extra
+                minutes after the tour. It uses your included day pass and is
+                not a private vehicle transfer.
               </p>
             </details>
             <details>
