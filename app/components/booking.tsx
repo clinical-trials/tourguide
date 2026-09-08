@@ -281,7 +281,7 @@ export default function Booking() {
                 : availability?.enabled
                   ? remaining == null
                     ? ''
-                    : `${remaining} places available. Muni pass included.`
+                    : `${remaining} places available. Muni fares paid separately.`
                   : 'Preview your plans. Reservations opening soon.'}
             </p>
           </>
@@ -318,8 +318,8 @@ export default function Booking() {
                 </div>
               )}
               <div>
-                <dt>Muni day pass</dt>
-                <dd>Included</dd>
+                <dt>Muni fares</dt>
+                <dd>Paid separately</dd>
               </div>
               <div>
                 <dt>Total (USD)</dt>

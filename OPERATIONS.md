@@ -7,14 +7,16 @@ This site is a private prelaunch review. It does not accept payment until all re
 - Two distinct 3.5-hour tours, $195 per person per departure, Tuesday–Sunday.
 - Above age 15 means 16+. Purchaser explicitly confirms age for every guest.
 - Capacity eight, no minimum group size enforced. Trial at 4–6 before confirming capacity.
-- Regular Muni day pass included. Food/drinks, cable cars, attraction admissions and game tickets excluded.
+- Guided Muni instruction is included. Guests purchase their own Muni passes and fares, including for the optional guided return. Food/drinks, cable cars, attraction admissions and game tickets are separate.
 - Guided return is $40 per person and starts after the tour. Allow about 45 minutes; delays possible.
 - Online reservations close one hour before departure and open at most 180 days ahead.
 - Whole-dollar USD prices are charged as displayed. Confirm tax treatment and all inclusions before selling.
 
 ## Muni lesson delivery
 
-Before the first ride, teach coverage, expiry and the guest’s actual fare method. Clipper pass holders tap at every boarding or Metro entry; MuniMobile users activate before boarding or entering faregates and show the active ticket. Retain paper passes for inspection. Reinforce direction and transfer skills during the tour, and help guests plan an onward ride at the finish. Arrange included fares so guests can keep using them after the group separates; provide a non-smartphone option. Guests aged 16–18 ride regular Muni free. Allow for teaching within the timed route trial.
+Public promise: “We teach you how to enjoy the city the way the locals do.” Teach the detailed steps in person; the website describes the experience without publishing the full tutorial.
+
+Before the first ride, teach coverage, expiry and the guest’s actual fare method. Clipper pass holders tap at every boarding or Metro entry; MuniMobile users activate before boarding or entering faregates and show the active ticket. Retain paper passes for inspection. Reinforce direction and transfer skills during the tour, and help guests plan an onward ride at the finish. Help guests choose and purchase their own fare when needed. Explain a non-smartphone option and check for existing passes before recommending another purchase. The tour does not supply or pay for guest passes. Guests aged 16–18 ride regular Muni free. Allow for teaching within the timed route trial.
 
 Guidance checked September 8, 2026. SFMTA plans to end MuniMobile day-pass sales January 3, 2027; recheck before departures. Sources: [day pass](https://www.sfmta.com/fares/day-pass), [MuniMobile](https://www.sfmta.com/getting-around/muni/fares/munimobile), [how to ride](https://www.sfmta.com/getting-around/muni/how-ride-muni-quick-start-guide).
 

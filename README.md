@@ -10,7 +10,7 @@ AI SF Tour — a contemporary San Francisco walking-and-Muni tour website.
 
 Branches A and B are offered Tuesday–Sunday at $195 per adult, ages 16+, with an optional $40 guided Muni return to Fisherman's Wharf. South Bay locations are discussed as stories, not visited.
 
-Each regular tour includes a hands-on Muni day-pass lesson, with boarding, Clipper/MuniMobile/paper fare instructions, transfers and onward trip planning.
+“We teach you how to enjoy the city the way the locals do.” Each regular tour includes in-person Muni instruction. Guests purchase their own passes and fares, including for the optional guided return. The website describes the experience; detailed teaching notes remain in the operator materials.
 
 ## Development
 

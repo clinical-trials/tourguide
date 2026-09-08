@@ -349,23 +349,20 @@ export default function Home() {
             <details open>
               <summary>What does the $195 ticket include?</summary>
               <p>
-                For Branch A or B: one 3½-hour guided experience and a Muni day
-                pass for buses, streetcars, and light rail, plus a hands-on
-                lesson in using it. Food, drinks, cable cars, attraction
-                admissions, and game tickets are separate. Each departure is
-                booked separately.
+                For Branch A or B: one 3½-hour guided experience, including
+                learning to explore the city by Muni with your guide. Muni
+                passes and fares, food, drinks, cable cars, attraction
+                admissions, and game tickets are purchased separately. Each
+                departure is booked separately.
               </p>
             </details>
             <details>
               <summary>Will you show me how to use Muni?</summary>
               <p>
-                Yes. Before the first ride, your guide will explain your pass,
-                show you when to tap or activate it, and help with boarding and
-                station gates. We’ll practice reading the route and destination
-                so you can keep exploring after the tour.{' '}
-                <a className="text-link" href="#muni">
-                  Read the Muni mini-lesson.
-                </a>
+                Yes. We teach you how to enjoy the city the way the locals do.
+                Your guide will help you choose and use your own Muni pass, get
+                comfortable on buses, streetcars, and light rail, and keep
+                exploring after the tour. Passes and fares are paid separately.
               </p>
             </details>
             <details>
@@ -381,8 +378,8 @@ export default function Home() {
               <p>
                 For Branch A or B, add a guided Muni return for $
                 {RETURN_PRICE_CENTS / 100} per person. Allow around 45 extra
-                minutes after the tour. It uses your included day pass and is
-                not a private vehicle transfer.
+                minutes after the tour. The add-on pays for your guide’s time;
+                Muni fares are paid separately. Travel is by Muni.
               </p>
             </details>
             <details>
