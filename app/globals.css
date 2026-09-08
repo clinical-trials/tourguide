@@ -1468,3 +1468,120 @@ footer {
     grid-column: 1 / -1;
   }
 }
+
+.muni-section {
+  display: grid;
+  gap: 2rem;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 1.5rem;
+}
+.muni-intro > p:not(.eyebrow) {
+  margin-top: 1.5rem;
+  max-width: 30rem;
+}
+.muni-intro .eyebrow {
+  display: inline-block;
+  padding: 0.35rem 0.55rem;
+  background: var(--lime);
+}
+.muni-pass-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  background: var(--navy);
+  color: var(--lime);
+  padding: 1.2rem;
+  max-width: 30rem;
+  box-shadow: 5px 5px 0 var(--lime);
+  margin-top: 1.5rem;
+}
+.muni-pass-note svg {
+  flex-shrink: 0;
+}
+.muni-pass-note span {
+  display: block;
+  color: #e7ede7;
+  font-size: 0.875rem;
+  margin-top: 0.4rem;
+}
+.muni-intro > .text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.75rem;
+}
+.muni-lesson {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.muni-lesson > li {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.8rem;
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+}
+.muni-lesson > li:first-child {
+  border-top: 3px solid var(--navy);
+}
+.lesson-number {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  padding-top: 0.2rem;
+  color: #526c22;
+}
+.muni-lesson h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.85rem;
+}
+.muni-lesson p {
+  margin-bottom: 0;
+}
+.muni-lesson p + p {
+  margin-top: 0.85rem;
+}
+.muni-methods details {
+  padding: 1rem 0;
+}
+.muni-methods .muni-service-note {
+  font-size: 0.875rem;
+}
+.muni-methods a,
+.muni-sources a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.muni-footnote {
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+  color: #53606a;
+  font-size: 0.875rem;
+}
+.muni-footnote > p {
+  max-width: 55rem;
+}
+.muni-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  align-items: center;
+}
+.muni-sources span {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+.muni-sources a {
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .muni-section {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+    column-gap: 4rem;
+  }
+  .muni-footnote {
+    grid-column: 1 / -1;
+  }
+}

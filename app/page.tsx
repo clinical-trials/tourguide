@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import Booking from './components/booking';
 import Games from './components/games';
+import MuniGuide from './components/muni-guide';
 import PixelPhoto from './components/pixel-photo';
 import PixelMark from './components/pixel-mark';
 import { RETURN_PRICE_CENTS } from '@/lib/booking.mjs';
@@ -124,7 +125,8 @@ export default function Home() {
                   <div>
                     Fisherman’s Wharf
                     <small>
-                      Bay views, Alcatraz stories, and a different departure.
+                      Bay views, Alcatraz stories, and a hands-on Muni pass
+                      lesson.
                     </small>
                   </div>
                 </li>
@@ -185,7 +187,8 @@ export default function Home() {
                   <div>
                     Wharf to Dogpatch
                     <small>
-                      Ride into the city. Arrive somewhere unexpected.
+                      Learn your Muni pass, then ride into a different side of
+                      the city.
                     </small>
                   </div>
                 </li>
@@ -325,6 +328,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <MuniGuide />
         <section className="section shell">
           <Games />
         </section>
@@ -346,9 +350,22 @@ export default function Home() {
               <summary>What does the $195 ticket include?</summary>
               <p>
                 For Branch A or B: one 3½-hour guided experience and a Muni day
-                pass for buses, streetcars, and light rail. Food, drinks, cable
-                cars, attraction admissions, and game tickets are separate. Each
-                departure is booked separately.
+                pass for buses, streetcars, and light rail, plus a hands-on
+                lesson in using it. Food, drinks, cable cars, attraction
+                admissions, and game tickets are separate. Each departure is
+                booked separately.
+              </p>
+            </details>
+            <details>
+              <summary>Will you show me how to use Muni?</summary>
+              <p>
+                Yes. Before the first ride, your guide will explain your pass,
+                show you when to tap or activate it, and help with boarding and
+                station gates. We’ll practice reading the route and destination
+                so you can keep exploring after the tour.{' '}
+                <a className="text-link" href="#muni">
+                  Read the Muni mini-lesson.
+                </a>
               </p>
             </details>
             <details>

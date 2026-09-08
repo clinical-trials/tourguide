@@ -12,6 +12,12 @@ This site is a private prelaunch review. It does not accept payment until all re
 - Online reservations close one hour before departure and open at most 180 days ahead.
 - Whole-dollar USD prices are charged as displayed. Confirm tax treatment and all inclusions before selling.
 
+## Muni lesson delivery
+
+Before the first ride, teach coverage, expiry and the guest’s actual fare method. Clipper pass holders tap at every boarding or Metro entry; MuniMobile users activate before boarding or entering faregates and show the active ticket. Retain paper passes for inspection. Reinforce direction and transfer skills during the tour, and help guests plan an onward ride at the finish. Arrange included fares so guests can keep using them after the group separates; provide a non-smartphone option. Guests aged 16–18 ride regular Muni free. Allow for teaching within the timed route trial.
+
+Guidance checked September 8, 2026. SFMTA plans to end MuniMobile day-pass sales January 3, 2027; recheck before departures. Sources: [day pass](https://www.sfmta.com/fares/day-pass), [MuniMobile](https://www.sfmta.com/getting-around/muni/fares/munimobile), [how to ride](https://www.sfmta.com/getting-around/muni/how-ride-muni-quick-start-guide).
+
 ## Runtime settings
 
 Use the Sites environment manager. Mark STRIPE_SECRET_KEY and STRIPE_WEBHOOK_SECRET as secrets. Never put them in source or browser variables.
