@@ -101,7 +101,7 @@ export default function Home() {
             <p>
               Start with the streets that shaped San Francisco. Or follow the
               next wave south. Branches A and B run Tuesday–Sunday. When the
-              beach is sunny and clear, special Branch C heads west.
+              beach has a perfectly sunny day, special Branch C heads west.
             </p>
           </div>
           <div className="route-cards">
@@ -243,13 +243,14 @@ export default function Home() {
                 TAKES A DAY OFF.
               </h3>
               <p>
-                A separate west-side outing through surf culture, gardens,
-                counterculture, and Japantown. On foot and by Muni, with time
-                for a different side of San Francisco.
+                Ocean Beach surf culture, Haight-Ashbury, Golden Gate Park’s
+                Japanese Tea Garden, and Japantown deserve a separate west-side
+                outing. We save them for another day… unless it’s a perfectly
+                sunny day. Then Branch C heads west.
               </p>
               <p className="sunny-condition">
                 <Sun size={20} aria-hidden="true" />
-                Sunny days only. No fog at Ocean Beach.
+                Perfectly sunny days only. No fog at Ocean Beach.
               </p>
             </div>
             <div className="special-route">
@@ -403,10 +404,10 @@ export default function Home() {
             <details>
               <summary>When does Branch C run?</summary>
               <p>
-                Branch C is a separate west-side special, offered only when
-                Ocean Beach is sunny and free of fog. It brings together Ocean
-                Beach surf culture, Golden Gate Park’s Japanese Tea Garden,
-                Haight-Ashbury, and Japantown. The guide confirms beach
+                Branch C is a separate west-side special for a perfectly sunny
+                day, with no fog at Ocean Beach. Ocean Beach surf culture,
+                Haight-Ashbury, Golden Gate Park’s Japanese Tea Garden, and
+                Japantown are outside Branches A and B. The guide confirms beach
                 conditions before departure. Dates, price, duration, and the
                 weather cancellation policy will be announced before bookings
                 open.
