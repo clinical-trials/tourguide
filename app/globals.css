@@ -1410,3 +1410,61 @@ footer {
     font-size: 0.75rem;
   }
 }
+
+.route-card-special {
+  background: var(--lime);
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 1.5rem;
+  scroll-margin-top: 2rem;
+}
+.route-card-special .route-letter {
+  box-shadow: 5px 5px 0 #101a2033;
+}
+.special-story > p {
+  margin-top: 1.4rem;
+  max-width: 29rem;
+}
+.special-story .sunny-condition {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid #101a2050;
+  margin-bottom: 0;
+}
+.sunny-condition svg {
+  flex-shrink: 0;
+}
+.special-route .route-stops {
+  margin: 0;
+}
+.special-route .route-stops small,
+.special-route .route-stops li > span {
+  color: #36451f;
+}
+.special-availability {
+  padding-top: 1.25rem;
+  border-top: 1px solid #101a2050;
+}
+.special-availability .eyebrow {
+  display: block;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.65rem;
+}
+.special-availability p {
+  font-size: 0.875rem;
+  max-width: 58rem;
+  margin-bottom: 0;
+}
+@media (min-width: 1024px) {
+  .route-card-special {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 4rem;
+  }
+  .special-availability {
+    grid-column: 1 / -1;
+  }
+}

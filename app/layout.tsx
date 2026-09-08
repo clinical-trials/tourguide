@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   icons: { icon: '/favicon.svg' },
   title: 'AI SF Tour — San Francisco, beyond the prompt',
   description:
-    'A contemporary San Francisco walking and Muni tour. Two half-day routes, Tuesday–Sunday. $195 per adult, ages 16+.',
+    'Explore San Francisco on foot and by Muni. Branches A and B run Tuesday–Sunday, $195 per adult, ages 16+. Discover Branch C, a sunny-day west-side special.',
 };
 export default function RootLayout({
   children,

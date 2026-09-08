@@ -5,6 +5,7 @@ import {
   TramFront,
   Clock3,
   MapPin,
+  Sun,
 } from 'lucide-react';
 import Booking from './components/booking';
 import Games from './components/games';
@@ -90,15 +91,15 @@ export default function Home() {
             <div>
               <p className="eyebrow">01 / CHOOSE YOUR BRANCH</p>
               <h2>
-                TWO WAYS IN.
+                ONE CITY.
                 <br />
-                ONE REMARKABLE CITY.
+                THREE BRANCHES.
               </h2>
             </div>
             <p>
               Start with the streets that shaped San Francisco. Or follow the
-              next wave south. Each branch is a complete tour, booked
-              separately.
+              next wave south. Branches A and B run Tuesday–Sunday. When the
+              beach is sunny and clear, special Branch C heads west.
             </p>
           </div>
           <div className="route-cards">
@@ -220,6 +221,81 @@ export default function Home() {
               </div>
             </article>
           </div>
+          <article
+            id="branch-c"
+            className="route-card route-card-special"
+            aria-labelledby="branch-c-title"
+          >
+            <div className="special-story">
+              <div className="route-top">
+                <span className="route-letter">C</span>
+                <span className="eyebrow">BRANCH C / SUNNY-DAY SPECIAL</span>
+              </div>
+              <h3 id="branch-c-title">
+                WHEN THE FOG
+                <br />
+                TAKES A DAY OFF.
+              </h3>
+              <p>
+                A separate west-side outing through surf culture, gardens,
+                counterculture, and Japantown. On foot and by Muni, with time
+                for a different side of San Francisco.
+              </p>
+              <p className="sunny-condition">
+                <Sun size={20} aria-hidden="true" />
+                Sunny days only. No fog at Ocean Beach.
+              </p>
+            </div>
+            <div className="special-route">
+              <ol className="route-stops">
+                <li>
+                  <span>01</span>
+                  <div>
+                    Ocean Beach
+                    <small>
+                      NorCal surf culture. Wetsuits, not board shorts. Stories
+                      from the shore.
+                    </small>
+                  </div>
+                </li>
+                <li>
+                  <span>02</span>
+                  <div>
+                    Golden Gate Park & the Japanese Tea Garden
+                    <small>A garden pause on the west side of the city.</small>
+                  </div>
+                </li>
+                <li>
+                  <span>03</span>
+                  <div>
+                    Haight-Ashbury
+                    <small>
+                      Counterculture, creativity, and the ideas that shaped a
+                      neighborhood.
+                    </small>
+                  </div>
+                </li>
+                <li>
+                  <span>04</span>
+                  <div>
+                    Japantown
+                    <small>
+                      A distinct neighborhood, with room to linger after the
+                      outing.
+                    </small>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div className="special-availability">
+              <span className="eyebrow">SPECIAL DATES TO BE ANNOUNCED</span>
+              <p>
+                The guide confirms conditions at Ocean Beach before departure.
+                Price, duration, meeting point, and garden admission details
+                will be published with the dates. Reservations are not open yet.
+              </p>
+            </div>
+          </article>
           <p className="route-note">
             <MapPin size={17} /> Proposed routes, subject to a timed trial.
             Company stops are exterior storytelling; office visits are not
@@ -266,26 +342,26 @@ export default function Home() {
             <details open>
               <summary>What does the $195 ticket include?</summary>
               <p>
-                One 3½-hour guided experience and a Muni day pass for buses,
-                streetcars, and light rail. Food, drinks, cable cars, attraction
-                admissions, and game tickets are separate. Each departure is
-                booked separately.
+                For Branch A or B: one 3½-hour guided experience and a Muni day
+                pass for buses, streetcars, and light rail. Food, drinks, cable
+                cars, attraction admissions, and game tickets are separate. Each
+                departure is booked separately.
               </p>
             </details>
             <details>
               <summary>Where do we meet and finish?</summary>
               <p>
-                Both tours begin in Fisherman’s Wharf. The exact meeting point
-                will be published before reservations open. Branch A finishes
-                near the Ferry Building; Branch B near Oracle Park.
+                Branches A and B begin in Fisherman’s Wharf. The exact meeting
+                point will be published before reservations open. Branch A
+                finishes near the Ferry Building; Branch B near Oracle Park.
               </p>
             </details>
             <details>
               <summary>Can you get me back to the Wharf?</summary>
               <p>
-                Add a guided Muni return for $20 per person. Allow around 45
-                extra minutes after the tour. It uses your included day pass and
-                is not a private vehicle transfer.
+                For Branch A or B, add a guided Muni return for $20 per person.
+                Allow around 45 extra minutes after the tour. It uses your
+                included day pass and is not a private vehicle transfer.
               </p>
             </details>
             <details>
@@ -307,14 +383,22 @@ export default function Home() {
               </p>
             </details>
             <details>
-              <summary>
-                What about Ocean Beach, the Haight, and tea gardens?
-              </summary>
+              <summary>When does Branch C run?</summary>
               <p>
-                Those deserve a separate west-side outing. Ocean Beach surf
-                culture, Haight-Ashbury, Golden Gate Park’s Japanese Tea Garden,
-                and Japantown are outside these two routes. South Bay locations
-                are discussed as stories, not visited.
+                Branch C is a separate west-side special, offered only when
+                Ocean Beach is sunny and free of fog. It brings together Ocean
+                Beach surf culture, Golden Gate Park’s Japanese Tea Garden,
+                Haight-Ashbury, and Japantown. The guide confirms beach
+                conditions before departure. Dates, price, duration, and the
+                weather cancellation policy will be announced before bookings
+                open.
+              </p>
+            </details>
+            <details>
+              <summary>Does any branch visit the South Bay?</summary>
+              <p>
+                South Bay locations are discussed as stories, not visited. All
+                three branches explore San Francisco.
               </p>
             </details>
             <details>
