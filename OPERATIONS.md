@@ -56,3 +56,5 @@ Eleven automated tests cover pricing, age, dates/DST, atomic capacity, actual sc
 - https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=137&date=2026-09-08
 
 Photo credit: California Street, San Francisco, by Matthiasmullie, Wikimedia Commons, CC BY-SA 4.0. Display cropped. https://commons.wikimedia.org/wiki/File:Cable_car_in_California_Street.jpg and https://creativecommons.org/licenses/by-sa/4.0/ . The photo depicts a cable car; this offer uses regular Muni and does not include cable cars.
+
+Dependency check: patched React/React DOM/React Server Components to 19.2.8, Vinext to beta.9 with its required RSC plugin, and Vite to 8.2.2. The remaining production-root npm audit finding is undici 7.24.8 inherited through local Miniflare/CLI tooling; the application uses platform fetch and no undici/ProxyAgent code was found in the packaged Worker JavaScript. Keep the local toolchain audit under review before subsequent development.
