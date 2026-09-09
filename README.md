@@ -10,6 +10,12 @@ This is the deployed, private review site. Open it while signed in with the acco
 
 This GitHub page contains the project files. Use the link above to view the working website. `localhost:3000` works only while running the project on your own computer; `aisftour.com` is the intended public domain and has not been connected here.
 
+## Business plan, guide training and artwork
+
+**[Open all business and design files →](business/README.md)**
+
+Includes the guide training and business plan PDF, backend manual, editable budget, print banners and advertisements, animated GIFs, and kawaii icons. Earlier drafts are preserved in a labeled archive.
+
 ## Tour branches
 
 - **Branch A:** North Beach, Chinatown, SoMa and the downtown AI story. 8:30 AM–12 PM.
