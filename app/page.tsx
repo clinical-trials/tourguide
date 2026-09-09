@@ -13,6 +13,7 @@ import MuniGuide from './components/muni-guide';
 import PixelPhoto from './components/pixel-photo';
 import PixelMark from './components/pixel-mark';
 import { RETURN_PRICE_CENTS } from '@/lib/booking.mjs';
+import { photoCredits } from '@/lib/photo-credits';
 export default function Home() {
   return (
     <>
@@ -70,7 +71,7 @@ export default function Home() {
                   <Clock3 size={17} /> 3½ hours
                 </span>
               </div>
-              <PixelPhoto />
+              <PixelPhoto priority />
             </div>
             <aside id="book" className="booking-wrap">
               <Booking />
@@ -119,6 +120,17 @@ export default function Home() {
                 From North Beach’s Italian roots to Chinatown’s civic story,
                 then south into the conversation around AI.
               </p>
+              <PixelPhoto
+                variant="route"
+                src="/photos/branch-a-chinatown-night-1280.webp"
+                srcSet="/photos/branch-a-chinatown-night-640.webp 640w, /photos/branch-a-chinatown-night-1280.webp 1280w"
+                alt="Red lanterns above Grant Avenue in San Francisco Chinatown at night."
+                caption="CHINATOWN / LAYERS OF THE CITY"
+                width={1280}
+                height={914}
+                focusY={0.5}
+                phase={1.8}
+              />
               <ol className="route-stops">
                 <li>
                   <span>01</span>
@@ -181,6 +193,17 @@ export default function Home() {
                 A southbound Muni ride into the neighborhoods where industrial
                 San Francisco meets its next chapter.
               </p>
+              <PixelPhoto
+                variant="route"
+                src="/photos/branch-b-chase-center-1280.webp"
+                srcSet="/photos/branch-b-chase-center-640.webp 640w, /photos/branch-b-chase-center-1280.webp 1280w"
+                alt="Chase Center’s curved glass entrance and silver sphere sculptures under a blue sky."
+                caption="MISSION BAY / HOME COURT"
+                width={1280}
+                height={844}
+                focusY={0.5}
+                phase={3.6}
+              />
               <ol className="route-stops">
                 <li>
                   <span>01</span>
@@ -252,6 +275,17 @@ export default function Home() {
                 <Sun size={20} aria-hidden="true" />
                 Perfectly sunny days only. No fog at Ocean Beach.
               </p>
+              <PixelPhoto
+                variant="route"
+                src="/photos/branch-c-ocean-beach-1280.webp"
+                srcSet="/photos/branch-c-ocean-beach-640.webp 640w, /photos/branch-c-ocean-beach-1280.webp 1280w"
+                alt="Pacific surf, broad sand and rocky cliffs at Ocean Beach on a sunny day."
+                caption="OCEAN BEACH / FOLLOW THE SUN"
+                width={1280}
+                height={960}
+                focusY={0.5}
+                phase={5.4}
+              />
             </div>
             <div className="special-route">
               <ol className="route-stops">
@@ -442,25 +476,30 @@ export default function Home() {
         <div className="shell footer-fine">
           <span>© 2026 AI SF Tour · Independent tour concept</span>
           <span>
-            Photo:{' '}
-            <a
-              href="https://commons.wikimedia.org/wiki/File:Cable_car_in_California_Street.jpg"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Matthiasmullie
-            </a>
-            ,{' '}
-            <a
-              href="https://creativecommons.org/licenses/by-sa/4.0/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CC BY-SA 4.0
-            </a>{' '}
-            · Cropped and pixel-treated · Cable cars not included
+            <a href="#photo-credits">Photography &amp; licenses</a> · Cable cars
+            not included
           </span>
         </div>
+        <details id="photo-credits" className="shell photo-credits">
+          <summary>Photography credits</summary>
+          {photoCredits.map((photo) => (
+            <p key={photo.subject}>
+              {photo.subject}:{' '}
+              <a href={photo.sourcePage} target="_blank" rel="noreferrer">
+                {photo.author}
+              </a>{' '}
+              ·{' '}
+              <a href={photo.licenseUrl} target="_blank" rel="noreferrer">
+                {photo.license}
+              </a>
+            </p>
+          ))}
+          <p>
+            Photos are cropped, resized and shown with an animated pixel color
+            treatment. Each photo and its adaptations retain the license listed
+            above.
+          </p>
+        </details>
       </footer>
     </>
   );
