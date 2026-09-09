@@ -1440,6 +1440,17 @@ footer {
   font-size: 0.75rem;
   padding-top: 0.2rem;
 }
+.route-place-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 2.75rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.route-place-link svg {
+  flex-shrink: 0;
+}
 .route-bottom :is(a, button) {
   text-decoration: underline;
   text-underline-offset: 5px;

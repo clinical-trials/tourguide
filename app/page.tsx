@@ -226,6 +226,24 @@ export default function Home() {
                 <li>
                   <span>02</span>
                   <div>
+                    <a
+                      className="route-place-link"
+                      href="https://rh.com/us/en/sanfrancisco/restaurant/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Coffee at RH San Francisco <ArrowUpRight size={15} />
+                    </a>
+                    <small>
+                      Restoration Hardware’s historic gallery at 590 20th
+                      Street. A coffee pause at The Palm Court, subject to
+                      service availability. Drinks purchased separately.
+                    </small>
+                  </div>
+                </li>
+                <li>
+                  <span>03</span>
+                  <div>
                     Pier 70 & the builder scene
                     <small>
                       Y Combinator’s neighborhood and the story of Corgi Cafe.
@@ -233,7 +251,7 @@ export default function Home() {
                   </div>
                 </li>
                 <li>
-                  <span>03</span>
+                  <span>04</span>
                   <div>
                     Mission Bay
                     <small>
@@ -243,7 +261,7 @@ export default function Home() {
                   </div>
                 </li>
                 <li>
-                  <span>04</span>
+                  <span>05</span>
                   <div>
                     Oracle Park
                     <small>Finish by the bay. Maybe stay for the game.</small>
@@ -274,8 +292,9 @@ export default function Home() {
                 TAKES A DAY OFF.
               </h3>
               <p>
-                Ocean Beach surf culture, Haight-Ashbury, Golden Gate Park’s
-                Japanese Tea Garden, and Japantown deserve a separate west-side
+                Ocean Beach surf culture, coffee at Outerlands on sunny
+                weekends, Golden Gate Park’s Japanese Tea Garden,
+                Haight-Ashbury, and Japantown deserve a separate west-side
                 outing. We save them for another day… unless it’s a perfectly
                 sunny day. Then Branch C heads west.
               </p>
@@ -310,12 +329,30 @@ export default function Home() {
                 <li>
                   <span>02</span>
                   <div>
+                    <a
+                      className="route-place-link"
+                      href="https://www.outerlandssf.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Coffee at Outerlands <ArrowUpRight size={15} />
+                    </a>
+                    <small>
+                      4001 Judah Street, Outer Sunset. A sunny-weekend pause
+                      during brunch hours, currently Saturday–Sunday,
+                      9:30 AM–2 PM. Drinks purchased separately.
+                    </small>
+                  </div>
+                </li>
+                <li>
+                  <span>03</span>
+                  <div>
                     Golden Gate Park & the Japanese Tea Garden
                     <small>A garden pause on the west side of the city.</small>
                   </div>
                 </li>
                 <li>
-                  <span>03</span>
+                  <span>04</span>
                   <div>
                     Haight-Ashbury
                     <small>
@@ -325,7 +362,7 @@ export default function Home() {
                   </div>
                 </li>
                 <li>
-                  <span>04</span>
+                  <span>05</span>
                   <div>
                     Japantown
                     <small>
@@ -347,8 +384,8 @@ export default function Home() {
           </article>
           <p className="route-note">
             <MapPin size={17} /> Proposed routes, subject to a timed trial.
-            Company stops are exterior storytelling; office visits are not
-            included.
+            AI company stops are exterior storytelling; office visits are not
+            included. Coffee stops depend on opening hours and service capacity.
           </p>
         </section>
         <section className="city-note">

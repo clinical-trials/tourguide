@@ -60,6 +60,14 @@ Browser checks verified A/B selection preserves date, two guests and the optiona
 
 No live Stripe transaction, Stripe test checkout, or actual webhook delivery was possible without account configuration. Optional WebMCP selection staging is included but its browser contract has not been verified in a supported context.
 
+## Coffee stops and route timing
+
+Branch B uses RH San Francisco / The Palm Court at 590 20th Street for its planned coffee stop. The guide rehearsal allows 3:05–3:15 PM to walk from Third/20th, 3:15–3:35 PM for guest-paid coffee, and 3:35–3:50 PM for the shorter Pier 70/Y Combinator story. The 5:30 PM finish is retained. Confirm coffee-only service, the full group size, access, restrooms and a 20-minute turnaround before offering this stop; the website does not promise seating or rooftop access. Corgi Cafe remains a neighborhood story. Source: https://rh.com/us/en/sanfrancisco/restaurant/
+
+The coffee-inclusive Branch C pilot is for sunny weekends. Meet near Ocean Beach at Judah/La Playa, walk to Outerlands at 4001 Judah Street, allow coffee at 11:30–11:50 AM, then take N Judah inbound from Judah/46th to Judah/9th and walk to the Tea Garden. The revised proposal still runs 11 AM–3:30 PM, with a shorter garden visit and Haight discussion. All intervals require a timed rehearsal; no C sales or public meeting point are enabled by this plan.
+
+Outerlands currently lists brunch Saturday–Sunday 9:30 AM–2 PM, first come first served, no brunch reservations, and a maximum seated party of 8. Eight guests plus a guide exceed that limit. Confirm takeaway service or another acceptable arrangement; never assume a group table or stand in a queue that would overrun the route. A weekday version needs a published coffee-stop change before booking. Coffee, food and any venue charges are paid directly by guests and are extra to the tour price. The labor model keeps the same 3.5-hour B and proposed 4.5-hour C durations; extend the paid-hours budget if rehearsal needs more time. Sources: https://www.outerlandssf.com/ and https://www.sfmta.com/routes/n-judah (checked September 9, 2026).
+
 ## Animated photographs
 
 The four tour photos use six-second GIF loops exported from the existing fine-pixel shader. Each has a 360px phone version (under 500KB) and a 640px version (under 1.5MB), with matching WebP stills. All eight GIFs were decoded and checked for 60 distinct frames, six-second duration, infinite repeat and exact first-frame poster matches. See public/motion/assets.json for source credits, Creative Commons licenses and export details.

@@ -5,8 +5,8 @@ AI SF Tour — a contemporary San Francisco walking-and-Muni tour website.
 ## Tour branches
 
 - **Branch A:** North Beach, Chinatown, SoMa and the downtown AI story. 8:30 AM–12 PM.
-- **Branch B — BUILDERS. BALLERS. & THE BAY.:** Dogpatch, the builder scene, Chase Center, OpenAI's neighborhood and Oracle Park. 2–5:30 PM.
-- **Branch C:** A separate sunny-day west-side special: Ocean Beach, Golden Gate Park's Japanese Tea Garden, Haight-Ashbury and Japantown. Dates, duration and price remain to be announced. The guide confirms sunny, fog-free conditions at Ocean Beach before departure.
+- **Branch B — BUILDERS. BALLERS. & THE BAY.:** Dogpatch, a coffee stop at RH San Francisco / The Palm Court (590 20th Street), the Pier 70 builder scene, Chase Center, OpenAI's neighborhood and Oracle Park. 2–5:30 PM. Coffee is purchased separately and depends on service availability.
+- **Branch C:** A separate sunny-day west-side special: Ocean Beach, Outerlands coffee on sunny weekends (4001 Judah Street), Golden Gate Park's Japanese Tea Garden, Haight-Ashbury and Japantown. Outerlands currently serves daytime brunch Saturday–Sunday, 9:30 AM–2 PM; confirm hours and capacity for the date. Dates, duration and price remain to be announced. The guide confirms sunny, fog-free conditions at Ocean Beach before departure. Drinks are purchased separately.
 
 Branches A and B are offered Tuesday–Sunday at $195 per adult, ages 16+, with an optional $40 guided Muni return to Fisherman's Wharf. South Bay locations are discussed as stories, not visited.
 
