@@ -2,6 +2,14 @@
 
 AI SF Tour — a contemporary San Francisco walking-and-Muni tour website.
 
+## View the website
+
+**[Open the AI SF Tour website →](https://ai-sf-tour.yoyoyoyoyoyoyoyoyoyoyo.chatgpt.site/)**
+
+This is the deployed, private review site. Open it while signed in with the account that owns the site. Other visitors do not currently have access, and ticket sales are not open yet.
+
+This GitHub page contains the project files. Use the link above to view the working website. `localhost:3000` works only while running the project on your own computer; `aisftour.com` is the intended public domain and has not been connected here.
+
 ## Tour branches
 
 - **Branch A:** North Beach, Chinatown, SoMa and the downtown AI story. 8:30 AM–12 PM.
