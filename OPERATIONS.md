@@ -54,7 +54,17 @@ If a network failure occurs after Stripe may have created a session, the app con
 
 ## Verification performed
 
-The current 21-test suite passes, covering pricing and government charges, age, dates/DST, atomic capacity, schema migrations, signatures, confirmation identity, tax snapshots, out-of-order refunds, duplicate events, and complete/incomplete Stripe recovery. TypeScript and the production build pass. Local HTTP checks confirm the homepage loads, availability remains closed, and checkout rejects payments while setup is unresolved. Earlier HTTP checks also covered Monday, invalid dates, cross-origin requests, unverifiable receipts, and the MLB feed. No live Stripe transaction, Stripe test checkout, or actual webhook delivery was possible without account configuration. Browser interaction/visual QA was not requested and was not performed. Optional WebMCP selection staging is included but its browser contract has not been verified in a supported context.
+The current 26-test suite passes, covering pricing and government charges, age, dates/DST, atomic capacity, schema migrations, signatures, confirmation identity, tax snapshots, out-of-order refunds, duplicate events, complete/incomplete Stripe recovery, and safe offline behavior. TypeScript and the production build pass. Local HTTP checks confirm the homepage loads, availability remains closed, and checkout rejects payments while setup is unresolved. Earlier HTTP checks also covered Monday, invalid dates, cross-origin requests, unverifiable receipts, and the MLB feed.
+
+Browser checks verified A/B selection preserves date, two guests and the optional return; review shows the matching branch/time and $470 subtotal. Phone date changes and Monday rejection were checked, along with phone navigation and page overflow at 320, 375, 430, 768 and 1280 pixels. The GIF update was checked at 390 pixels: four motion controls pause/resume, visible images load the 360px GIF, offscreen images return to stills, and Branch A still reviews the expected date and $470 subtotal.
+
+No live Stripe transaction, Stripe test checkout, or actual webhook delivery was possible without account configuration. Optional WebMCP selection staging is included but its browser contract has not been verified in a supported context.
+
+## Animated photographs
+
+The four tour photos use six-second GIF loops exported from the existing fine-pixel shader. Each has a 360px phone version (under 500KB) and a 640px version (under 1.5MB), with matching WebP stills. All eight GIFs were decoded and checked for 60 distinct frames, six-second duration, infinite repeat and exact first-frame poster matches. See public/motion/assets.json for source credits, Creative Commons licenses and export details.
+
+PixelPhoto loads a GIF only when its figure is visible, the page is active, reduced motion is off and the guest has not paused it. Pausing or leaving the viewport unmounts the animation. A still remains visible during loading or an error; a failed poster falls back to the original photograph. Reduced-motion settings always show stills. Keep both sizes and matching stills together when replacing assets, retain their licenses, and recheck phone controls after edits. The service worker does not cache GIFs, API responses, bookings or receipts.
 
 ## Sources
 

@@ -130,7 +130,7 @@ export default function Home() {
                 width={1280}
                 height={914}
                 focusY={0.5}
-                phase={1.8}
+                motionKey="branch-a-chinatown-night"
               />
               <ol className="route-stops">
                 <li>
@@ -203,7 +203,7 @@ export default function Home() {
                 width={1280}
                 height={844}
                 focusY={0.5}
-                phase={3.6}
+                motionKey="branch-b-chase-center"
               />
               <ol className="route-stops">
                 <li>
@@ -285,7 +285,7 @@ export default function Home() {
                 width={1280}
                 height={960}
                 focusY={0.5}
-                phase={5.4}
+                motionKey="branch-c-ocean-beach"
               />
             </div>
             <div className="special-route">
@@ -496,7 +496,7 @@ export default function Home() {
             </p>
           ))}
           <p>
-            Photos are cropped, resized and shown with an animated pixel color
+            Photos are cropped, resized and shown as looping GIFs with a pixel color
             treatment. Each photo and its adaptations retain the license listed
             above.
           </p>

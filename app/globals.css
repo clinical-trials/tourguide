@@ -1093,16 +1093,16 @@ footer {
   height: 100%;
   object-fit: cover;
 }
-.pixel-photo canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+.pixel-photo .photo-gif {
   opacity: 0;
-  image-rendering: pixelated;
 }
-.pixel-photo canvas[data-ready='true'] {
+.pixel-photo .photo-gif[data-ready='true'] {
   opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pixel-photo .photo-gif {
+    display: none;
+  }
 }
 .pixel-photo figcaption {
   position: absolute;
