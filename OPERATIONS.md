@@ -54,11 +54,17 @@ If a network failure occurs after Stripe may have created a session, the app con
 
 ## Verification performed
 
-The current 26-test suite passes, covering pricing and government charges, age, dates/DST, atomic capacity, schema migrations, signatures, confirmation identity, tax snapshots, out-of-order refunds, duplicate events, complete/incomplete Stripe recovery, and safe offline behavior. TypeScript and the production build pass. Local HTTP checks confirm the homepage loads, availability remains closed, and checkout rejects payments while setup is unresolved. Earlier HTTP checks also covered Monday, invalid dates, cross-origin requests, unverifiable receipts, and the MLB feed.
+The current 29-test suite passes, covering pricing and government charges, age, dates/DST, atomic capacity, schema migrations, signatures, confirmation identity, tax snapshots, out-of-order refunds, duplicate events, complete/incomplete Stripe recovery, safe offline behavior, and checkout-return selection validation. TypeScript and the production build pass. Local HTTP checks confirm the homepage loads, availability remains closed, and checkout rejects payments while setup is unresolved. Earlier HTTP checks also covered Monday, invalid dates, cross-origin requests, unverifiable receipts, and the MLB feed.
 
 Browser checks verified A/B selection preserves date, two guests and the optional return; review shows the matching branch/time and $470 subtotal. Phone date changes and Monday rejection were checked, along with phone navigation and page overflow at 320, 375, 430, 768 and 1280 pixels. The GIF update was checked at 390 pixels: four motion controls pause/resume, visible images load the 360px GIF, offscreen images return to stills, and Branch A still reviews the expected date and $470 subtotal.
 
 No live Stripe transaction, Stripe test checkout, or actual webhook delivery was possible without account configuration. Optional WebMCP selection staging is included but its browser contract has not been verified in a supported context.
+
+## Returning from checkout
+
+Stripe's return-to-site link carries only the date, Branch A/B, guest count and optional guided return. The form stages those choices and fetches current availability again. Prices are recalculated and age acknowledgement starts unchecked. No customer contact details, payment references or consent are carried in this link. Unsupported branches, malformed dates, duplicate fields and invalid quantities are ignored. Real but closed dates remain visible for correction; they do not silently change to a different departure. The booking review explicitly lists coffee, food and drinks as paid separately.
+
+Returning to the site does not confirm payment, cancel an order or release inventory. The existing signed-webhook and provider-reconciliation rules still govern those actions. Test the actual Stripe back button in test mode once credentials and an externally reachable webhook are configured. Reference: https://docs.stripe.com/api/checkout/sessions/create#checkout_session_create-cancel_url
 
 ## Coffee stops and route timing
 

@@ -1,6 +1,6 @@
 import { getDb } from '@/db';
 import { settings, ready, json, reconcileHolds } from '@/lib/server';
-import { validateBooking, PARTS, CAPACITY } from '@/lib/booking.mjs';
+import { validateBooking, PARTS, CAPACITY, checkoutCancelUrl } from '@/lib/booking.mjs';
 import { CLAIM_SQL } from '@/lib/inventory.mjs';
 import {
   stripeRequest,
@@ -95,7 +95,7 @@ export async function POST(req: Request) {
   const params = new URLSearchParams({
     mode: 'payment',
     success_url: `${c.siteUrl}/confirmation?session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${c.siteUrl}/?checkout=cancelled#book`,
+    cancel_url: checkoutCancelUrl(c.siteUrl, booking),
     'payment_method_types[0]': 'card',
     expires_at: String(Math.floor(Date.now() / 1000) + 2100),
     client_reference_id: id,

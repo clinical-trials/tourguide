@@ -17,6 +17,7 @@ import {
   canBook,
   CAPACITY,
   RETURN_PRICE_CENTS,
+  readBookingSelection,
 } from '@/lib/booking.mjs';
 import { registerBookingTools } from '@/lib/webmcp.mjs';
 type Availability = {
@@ -96,12 +97,18 @@ export default function Booking() {
   }, []);
   useEffect(() => {
     const params = new URLSearchParams(location.search);
-    if (params.get('part') === 'A' || params.get('part') === 'B')
-      setPart(params.get('part') as 'A' | 'B');
-    else if (canBook(date, 'A')) setPart('A');
+    const selection = readBookingSelection(location.search);
+    if (selection.date) {
+      setDate(selection.date);
+      setMonth(localDate(selection.date));
+    }
+    if (selection.part) setPart(selection.part);
+    else if (canBook(selection.date || date, 'A')) setPart('A');
+    if (selection.guests !== undefined) setGuests(selection.guests);
+    if (selection.returnToWharf !== undefined) setBack(selection.returnToWharf);
     if (params.get('checkout') === 'cancelled')
       setError(
-        'Checkout was left before confirmation. Any unpaid held places are released when checkout expires, usually within 35 minutes.',
+        'You’re back from checkout. Review your choices and confirm ages again before continuing. Leaving checkout does not immediately release held places; unpaid holds usually expire within 35 minutes.',
       );
   }, []);
   useEffect(() => {
@@ -407,6 +414,10 @@ export default function Booking() {
               )}
               <div>
                 <dt>Muni fares</dt>
+                <dd>Paid separately</dd>
+              </div>
+              <div>
+                <dt>Coffee, food &amp; drinks</dt>
                 <dd>Paid separately</dd>
               </div>
               <div>
