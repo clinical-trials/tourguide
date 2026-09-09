@@ -1600,3 +1600,348 @@ footer {
     column-gap: 4rem;
   }
 }
+
+/* Phone app: reachable navigation, native dates and room for device safe areas. */
+.phone-navigation,
+.phone-date-picker {
+  display: none;
+}
+.booking-card {
+  scroll-margin-top: 1rem;
+}
+.booking-heading h2:focus {
+  outline: none;
+}
+.date-unavailable {
+  color: #963324;
+  font-weight: 600;
+}
+.phone-sheet {
+  max-height: 88vh;
+  max-height: 88dvh;
+  max-width: 36rem;
+  margin-inline: auto;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  background: var(--background);
+  border-top: 5px solid var(--lime);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  font-size: 1rem;
+}
+.phone-sheet [data-slot='sheet-header'] {
+  padding: 1.5rem 4.25rem 0 1.25rem;
+  gap: 0.75rem;
+}
+.phone-sheet [data-slot='sheet-title'] {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 800;
+}
+.phone-sheet [data-slot='sheet-description'] {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.phone-sheet [data-slot='sheet-close'] {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.phone-sheet-body {
+  padding: 0 1.25rem 1.5rem;
+}
+.phone-quick-links {
+  display: grid;
+  margin-bottom: 1.5rem;
+}
+.phone-quick-links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  min-height: 3.5rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+}
+.phone-install {
+  border: 1px solid var(--border);
+  padding: 1.25rem;
+  background: #fff;
+}
+.phone-install h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+.phone-install .primary-button {
+  margin-bottom: 1rem;
+}
+.phone-install p:last-child {
+  margin-bottom: 0;
+}
+@media (display-mode: standalone) {
+  .phone-install {
+    display: none;
+  }
+}
+@media (max-width: 767px),
+  (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+  html {
+    scroll-padding-top: 1rem;
+    scroll-padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+  }
+  body {
+    padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+  }
+  .shell {
+    padding-left: max(1rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1rem, env(safe-area-inset-right, 0px));
+  }
+  .topline {
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    padding-top: max(0.5rem, env(safe-area-inset-top, 0px));
+    padding-left: max(1rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1rem, env(safe-area-inset-right, 0px));
+  }
+  .header {
+    min-height: 5.25rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding-block: 0.75rem;
+  }
+  .header nav > a:not(.nav-book) {
+    display: none;
+  }
+  .nav-book {
+    padding-inline: 0.65rem;
+  }
+  .hero {
+    padding-top: 1.5rem;
+    gap: 2rem;
+  }
+  .hero h1 {
+    font-size: clamp(3.4rem, 16vw, 6rem);
+    overflow-wrap: anywhere;
+  }
+  .hero-photo {
+    height: clamp(10rem, 43vw, 17rem);
+  }
+  .hero-photo figcaption,
+  .route-photo figcaption {
+    letter-spacing: 0.03em;
+  }
+  .photo-motion-toggle {
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+  }
+  .hero > *,
+  .games-card > *,
+  .route-top > *,
+  .route-stops li > div,
+  .muni-section > * {
+    min-width: 0;
+  }
+  .booking-heading,
+  .booking-inner,
+  .confirmation .booking-inner {
+    padding-inline: 1rem;
+  }
+  .booking-heading h2 {
+    font-size: clamp(2.25rem, 9vw, 3rem);
+  }
+  .phone-date-picker {
+    display: grid;
+    gap: 0.5rem;
+  }
+  .phone-date-picker label {
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  .phone-date-picker input,
+  .schedule-date input {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 3.25rem;
+    padding: 0.75rem;
+    border: 1px solid var(--navy);
+    border-radius: 0;
+    background: #fff;
+    color: var(--navy);
+    font-size: 1rem;
+    color-scheme: light;
+  }
+  .phone-date-picker input[aria-invalid='true'] {
+    border-color: #963324;
+  }
+  .phone-date-picker p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  .desktop-date-picker {
+    display: none;
+  }
+  .calendar-heading {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    letter-spacing: 0.03em;
+    font-size: 0.875rem;
+  }
+  .calendar-note,
+  .booking-caption,
+  .guest-row small,
+  .check-row small,
+  .check-row strong {
+    font-size: 0.875rem;
+  }
+  .slot {
+    min-height: 4.5rem;
+    gap: 0.65rem;
+    padding: 0.8rem 0.65rem;
+  }
+  .slot > span:not(.slot-tag) {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .slot [data-slot='radio-group-item'],
+  .check-row [data-slot='checkbox'],
+  .primary-button svg,
+  .phone-quick-links svg {
+    flex-shrink: 0;
+  }
+  .slot-tag {
+    font-size: 1.1rem;
+  }
+  .guest-row {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .stepper {
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .stepper button {
+    width: 3rem;
+    height: 3rem;
+  }
+  .stepper output {
+    min-width: 1.75rem;
+  }
+  .check-row {
+    min-height: 3rem;
+    padding-block: 0.75rem;
+    line-height: 1.5;
+  }
+  .check-row [data-slot='checkbox'] {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+  .booking-total {
+    flex-wrap: wrap;
+    gap: 0.35rem 1rem;
+  }
+  .booking-total strong {
+    margin-left: auto;
+    white-space: nowrap;
+  }
+  .primary-button,
+  .back-button {
+    min-height: 3.25rem;
+    font-size: 1rem;
+  }
+  .review-title {
+    font-size: clamp(2.3rem, 10vw, 3.4rem);
+    overflow-wrap: anywhere;
+  }
+  .review-list > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+    gap: 0.75rem;
+  }
+  .review-list dt,
+  .review-list dd {
+    overflow-wrap: anywhere;
+  }
+  .route-card {
+    padding: 1.25rem;
+  }
+  .route-card h3,
+  .games-card h2,
+  .scoreboard h3 {
+    overflow-wrap: anywhere;
+  }
+  .route-top {
+    gap: 0.85rem;
+  }
+  .schedule-date {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .schedule-date label {
+    font-size: 1rem;
+  }
+  .scoreboard {
+    padding: 1.25rem;
+  }
+  .upcoming > p:not(.score-eyebrow) {
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    font-size: 0.875rem;
+  }
+  .faq-list details {
+    padding-block: 0.75rem;
+  }
+  .faq-list summary {
+    min-height: 3rem;
+    padding-block: 0.5rem;
+  }
+  .footer-fine a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    font-size: 0.875rem;
+  }
+  .phone-navigation {
+    position: fixed;
+    z-index: 40;
+    inset: auto 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 0.3rem max(0.5rem, env(safe-area-inset-right, 0px))
+      calc(0.3rem + env(safe-area-inset-bottom, 0px))
+      max(0.5rem, env(safe-area-inset-left, 0px));
+    background: var(--navy);
+    color: #f4f6f2;
+    border-top: 1px solid #d5ff5850;
+    box-shadow: 0 -4px 16px #101a201a;
+  }
+  .phone-navigation > a,
+  .phone-navigation > button {
+    min-height: 3.9rem;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.3;
+    padding: 0.35rem;
+  }
+  .phone-navigation > .phone-book {
+    background: var(--lime);
+    color: var(--navy);
+  }
+  .phone-navigation span {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+  .phone-navigation > :focus-visible {
+    outline-color: #fff;
+    outline-offset: -3px;
+  }
+}

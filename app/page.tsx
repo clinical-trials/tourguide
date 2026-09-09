@@ -14,6 +14,7 @@ import PixelPhoto from './components/pixel-photo';
 import PixelMark from './components/pixel-mark';
 import { RETURN_PRICE_CENTS } from '@/lib/booking.mjs';
 import { photoCredits } from '@/lib/photo-credits';
+import BranchLink from './components/branch-link';
 export default function Home() {
   return (
     <>
@@ -172,9 +173,9 @@ export default function Home() {
               </ol>
               <div className="route-bottom">
                 <span>$195 / adult</span>
-                <a href="/?part=A#book">
+                <BranchLink part="A">
                   Choose Branch A <ArrowUpRight size={20} />
-                </a>
+                </BranchLink>
               </div>
             </article>
             <article className="route-card route-card-dark">
@@ -244,9 +245,9 @@ export default function Home() {
               </ol>
               <div className="route-bottom">
                 <span>$195 / adult</span>
-                <a href="/?part=B#book">
+                <BranchLink part="B">
                   Choose Branch B <ArrowUpRight size={20} />
-                </a>
+                </BranchLink>
               </div>
             </article>
           </div>
@@ -364,7 +365,7 @@ export default function Home() {
           </div>
         </section>
         <MuniGuide />
-        <section className="section shell">
+        <section id="games" className="section shell">
           <Games />
         </section>
         <section id="details" className="section shell details-section">

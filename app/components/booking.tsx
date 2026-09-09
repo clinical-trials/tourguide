@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   ArrowUpRight,
   Minus,
@@ -43,17 +43,57 @@ function initialDate() {
   return d;
 }
 export default function Booking() {
+  const cardRef = useRef<HTMLDivElement>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
   const [date, setDate] = useState(initialDate);
   const [part, setPart] = useState<'A' | 'B'>('B');
   const [guests, setGuests] = useState(1);
   const [back, setBack] = useState(false);
   const [age, setAge] = useState(false);
   const [review, setReview] = useState(false);
+  const previousReview = useRef(review);
   const [availability, setAvailability] = useState<Availability | null>(null);
   const [loading, setLoading] = useState(true);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   const [month, setMonth] = useState(localDate(date));
+  const closedDate = !canBook(date, 'A') && !canBook(date, 'B');
+
+  function focusBooking() {
+    headingRef.current?.focus({ preventScroll: true });
+    cardRef.current?.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ? 'auto'
+        : 'smooth',
+      block: 'start',
+    });
+  }
+  function chooseDate(value: string) {
+    setDate(value);
+    setMonth(localDate(value));
+    setError('');
+    if (!canBook(value, part)) {
+      if (canBook(value, 'A')) setPart('A');
+      else if (canBook(value, 'B')) setPart('B');
+    }
+  }
+  useEffect(() => {
+    if (previousReview.current === review) return;
+    previousReview.current = review;
+    focusBooking();
+  }, [review]);
+  useEffect(() => {
+    const chooseBranch = (event: Event) => {
+      const value = (event as CustomEvent).detail;
+      if (value !== 'A' && value !== 'B') return;
+      setPart(value);
+      setReview(false);
+      setError('');
+      focusBooking();
+    };
+    window.addEventListener('tour:choose-branch', chooseBranch);
+    return () => window.removeEventListener('tour:choose-branch', chooseBranch);
+  }, []);
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     if (params.get('part') === 'A' || params.get('part') === 'B')
@@ -146,10 +186,12 @@ export default function Booking() {
     }
   }
   return (
-    <div className="booking-card">
+    <div className="booking-card" ref={cardRef}>
       <div className="booking-heading">
         <p className="eyebrow">YOUR NEXT GOOD STORY</p>
-        <h2>FIND YOUR TOUR.</h2>
+        <h2 ref={headingRef} tabIndex={-1}>
+          {review ? 'REVIEW YOUR TOUR.' : 'FIND YOUR TOUR.'}
+        </h2>
         <p>
           <strong>$195</strong> <span>/ adult · ages 16+</span>
         </p>
@@ -161,27 +203,50 @@ export default function Booking() {
               <span>01 / PICK A DATE</span>
               <span>TUE–SUN</span>
             </div>
-            <Calendar
-              mode="single"
-              required
-              selected={localDate(date)}
-              month={month}
-              onMonthChange={setMonth}
-              onSelect={(d) => {
-                if (d) {
-                  setDate(dateKey(d));
-                  setError('');
+            <div className="phone-date-picker">
+              <label htmlFor="phone-tour-date">Tour date</label>
+              <input
+                id="phone-tour-date"
+                type="date"
+                value={date}
+                min={sfDate()}
+                max={dateKey(new Date(Date.now() + 180 * 86400000))}
+                onChange={(event) => {
+                  if (event.target.value) chooseDate(event.target.value);
+                }}
+                aria-describedby="tour-date-note"
+                aria-invalid={closedDate}
+              />
+              <p>{dateLabel}</p>
+            </div>
+            <div className="desktop-date-picker">
+              <Calendar
+                mode="single"
+                required
+                selected={localDate(date)}
+                month={month}
+                onMonthChange={setMonth}
+                onSelect={(d) => {
+                  if (d) {
+                    chooseDate(dateKey(d));
+                  }
+                }}
+                disabled={(d) =>
+                  !canBook(dateKey(d), 'A') && !canBook(dateKey(d), 'B')
                 }
-              }}
-              disabled={(d) =>
-                !canBook(dateKey(d), 'A') && !canBook(dateKey(d), 'B')
-              }
-              startMonth={localDate(sfDate())}
-              endMonth={new Date(Date.now() + 180 * 86400000)}
-              className="tour-calendar"
-            />
-            <p className="calendar-note">
-              No tours Mondays · All times Pacific
+                startMonth={localDate(sfDate())}
+                endMonth={new Date(Date.now() + 180 * 86400000)}
+                className="tour-calendar"
+              />
+            </div>
+            <p
+              id="tour-date-note"
+              className={`calendar-note ${closedDate ? 'date-unavailable' : ''}`}
+              role="status"
+            >
+              {closedDate
+                ? 'No departures on this date. Choose Tuesday–Sunday, at least one hour ahead.'
+                : 'No tours Mondays · All times Pacific'}
             </p>
             <div className="calendar-heading">
               <span>02 / YOUR DEPARTURE</span>

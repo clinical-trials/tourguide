@@ -23,7 +23,7 @@ type PixelPhotoProps = {
 };
 
 export default function PixelPhoto({
-  src = '/san-francisco.jpg',
+  src = '/photos/san-francisco-1280.webp',
   srcSet,
   alt = 'A cable car on California Street at night, with a fine pixel color treatment',
   caption = 'LOCAL STREETS. GLOBAL IDEAS.',
@@ -183,8 +183,13 @@ export default function PixelPhoto({
       <img
         ref={imageRef}
         src={src}
-        srcSet={srcSet}
-        sizes={srcSet ? '(min-width: 768px) 40vw, 90vw' : undefined}
+        srcSet={
+          srcSet ??
+          (variant === 'hero'
+            ? '/photos/san-francisco-640.webp 640w, /photos/san-francisco-1280.webp 1280w'
+            : undefined)
+        }
+        sizes="(min-width: 1024px) 45vw, 90vw"
         alt={alt}
         width={width}
         height={height}
