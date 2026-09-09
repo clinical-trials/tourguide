@@ -12,6 +12,7 @@ import Games from './components/games';
 import MuniGuide from './components/muni-guide';
 import PixelPhoto from './components/pixel-photo';
 import PixelMark from './components/pixel-mark';
+import CityMascot from './components/city-mascot';
 import { RETURN_PRICE_CENTS } from '@/lib/booking.mjs';
 import { photoCredits } from '@/lib/photo-credits';
 import BranchLink from './components/branch-link';
@@ -47,9 +48,12 @@ export default function Home() {
         <div className="hero-stage">
           <section className="hero shell">
             <div className="hero-story">
-              <p className="eyebrow">
-                <span className="live-dot" /> A CONTEMPORARY SAN FRANCISCO TOUR
-              </p>
+              <div className="hero-kicker">
+                <p className="eyebrow">
+                  <span className="live-dot" /> A CONTEMPORARY SAN FRANCISCO TOUR
+                </p>
+                <CityMascot icon="bridge" priority />
+              </div>
               <h1>
                 THE CITY.
                 <br />
@@ -183,13 +187,16 @@ export default function Home() {
                 <span className="route-letter">B</span>
                 <span className="eyebrow">BRANCH B / 2:00–5:30 PM</span>
               </div>
-              <h3>
-                BUILDERS.
-                <br />
-                BALLERS.
-                <br />
-                &amp; THE BAY.
-              </h3>
+              <div className="branch-title">
+                <h3>
+                  BUILDERS.
+                  <br />
+                  BALLERS.
+                  <br />
+                  &amp; THE BAY.
+                </h3>
+                <CityMascot icon="t-train" />
+              </div>
               <p>
                 A southbound Muni ride into the neighborhoods where industrial
                 San Francisco meets its next chapter.

@@ -1028,10 +1028,71 @@ footer {
 .hero-story {
   min-width: 0;
 }
-.hero-story > .eyebrow {
+/* Three small city characters: decorative, with space kept clear for copy. */
+.city-mascot {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  flex: 0 0 auto;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+.hero-kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 31rem;
+}
+.hero-kicker > .eyebrow {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
   color: #d1d9d4;
   letter-spacing: 0.04em;
   font-weight: 400;
+}
+.hero-kicker .city-mascot {
+  transform: rotate(-5deg);
+}
+.branch-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 0.75rem;
+  row-gap: 0.5rem;
+}
+.branch-title h3 {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+.branch-title .city-mascot {
+  margin-left: auto;
+  transform: rotate(5deg);
+}
+.muni-pass-note .city-mascot {
+  width: 3.25rem;
+  height: 3.25rem;
+  align-self: center;
+  transform: rotate(-4deg);
+}
+.muni-pass-note > div {
+  min-width: 0;
+}
+@media (min-width: 768px) {
+  .city-mascot {
+    width: 4rem;
+    height: 4rem;
+  }
+  .branch-title .city-mascot {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .muni-pass-note .city-mascot {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
 }
 .live-dot {
   background: var(--lime);

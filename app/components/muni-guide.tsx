@@ -1,4 +1,5 @@
-import { TramFront, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+import CityMascot from './city-mascot';
 
 export default function MuniGuide() {
   return (
@@ -19,7 +20,7 @@ export default function MuniGuide() {
           find your next neighborhood, and keep exploring long after the tour.
         </p>
         <div className="muni-pass-note">
-          <TramFront size={28} aria-hidden="true" />
+          <CityMascot icon="bus" />
           <div>
             <strong>Buses. Streetcars. Light rail.</strong>
             <span>Your guide shows you how, as you go.</span>
