@@ -2,7 +2,13 @@ import { getDb } from '@/db';
 import { settings, ready, json, reconcileHolds } from '@/lib/server';
 import { validateBooking, PARTS, CAPACITY } from '@/lib/booking.mjs';
 import { CLAIM_SQL } from '@/lib/inventory.mjs';
-import { stripeRequest } from '@/lib/stripe.mjs';
+import {
+  stripeRequest,
+  checkoutChargeParams,
+  validateStripeTaxRate,
+  validateCheckoutAmounts,
+} from '@/lib/stripe.mjs';
+import { CHARGE_POLICY } from '@/lib/charge-policy.mjs';
 export async function POST(req: Request) {
   const origin = req.headers.get('origin');
   if (origin !== new URL(req.url).origin)
@@ -16,7 +22,16 @@ export async function POST(req: Request) {
   try {
     if (Number(req.headers.get('content-length') || 0) > 4096)
       return json({ error: 'Request too large.' }, 413);
-    booking = validateBooking(await req.json());
+    const input = (await req.json()) as { quotedTotal?: number };
+    booking = validateBooking(input as Parameters<typeof validateBooking>[0]);
+    if (input.quotedTotal !== booking.total)
+      return json(
+        {
+          error:
+            'The price has changed. Refresh this page and review the current total before paying.',
+        },
+        409,
+      );
   } catch (e) {
     return json(
       { error: e instanceof Error ? e.message : 'Invalid booking.' },
@@ -26,6 +41,31 @@ export async function POST(req: Request) {
   const c = settings(),
     db = getDb(),
     id = crypto.randomUUID();
+  try {
+    const rates = await Promise.all(
+      CHARGE_POLICY.taxes.map(async (tax) => ({
+        expected: tax,
+        actual: await stripeRequest(
+          c.stripeKey,
+          `tax_rates/${encodeURIComponent(tax.id)}`,
+        ),
+      })),
+    );
+    if (
+      rates.some(
+        ({ actual, expected }) => !validateStripeTaxRate(actual, expected),
+      )
+    )
+      throw new Error('Tax configuration mismatch');
+  } catch {
+    return json(
+      {
+        error:
+          'Checkout charges could not be verified. Please contact the tour operator before paying.',
+      },
+      503,
+    );
+  }
   await reconcileHolds(booking.date);
   const hold = await db
     .prepare(CLAIM_SQL)
@@ -36,6 +76,7 @@ export async function POST(req: Request) {
       booking.guests,
       Number(booking.returnToWharf),
       booking.total,
+      JSON.stringify(booking),
       Date.now(),
       booking.date,
       booking.part,
@@ -63,27 +104,19 @@ export async function POST(req: Request) {
     'metadata[part]': booking.part,
     'metadata[age_confirmed]': 'true',
     'payment_intent_data[metadata][booking_id]': id,
-    'line_items[0][price_data][currency]': 'usd',
-    'line_items[0][price_data][unit_amount]': String(
-      booking.tour / booking.guests,
-    ),
-    'line_items[0][price_data][product_data][name]': `AI SF Tour — ${PARTS[booking.part].label}`,
-    'line_items[0][price_data][product_data][description]': `${booking.date} · ${PARTS[booking.part].time} Pacific · Ages 16+ · Meet: ${c.meeting}`,
-    'line_items[0][quantity]': String(booking.guests),
     'custom_text[submit][message]': `Ages 16+. ${c.policy}`.slice(0, 1200),
   });
-  if (booking.returnToWharf) {
-    params.set('line_items[1][price_data][currency]', 'usd');
-    params.set(
-      'line_items[1][price_data][unit_amount]',
-      String(booking.return / booking.guests),
-    );
-    params.set(
-      'line_items[1][price_data][product_data][name]',
-      'Guided Muni return to Fisherman’s Wharf',
-    );
-    params.set('line_items[1][quantity]', String(booking.guests));
-  }
+  for (const [key, value] of checkoutChargeParams(booking))
+    params.set(key, value);
+  params.set(
+    'line_items[0][price_data][product_data][name]',
+    `AI SF Tour — ${PARTS[booking.part].label}`,
+  );
+  params.set(
+    'line_items[0][price_data][product_data][description]',
+    `${booking.date} · ${PARTS[booking.part].time} Pacific · Ages 16+ · Meet: ${c.meeting}`,
+  );
+  let sessionCreated = false;
   try {
     const session = await stripeRequest(
       c.stripeKey,
@@ -91,15 +124,40 @@ export async function POST(req: Request) {
       params,
       id,
     );
+    sessionCreated = true;
     if (!session.url || !session.id)
       throw new Error('Checkout did not return a payment page.');
     await db
       .prepare('UPDATE bookings SET stripe_session=? WHERE id=?')
       .bind(session.id, id)
       .run();
+    if (!validateCheckoutAmounts(session, booking)) {
+      // Never send a guest to a session whose Stripe total differs from their review.
+      // Retain its inventory hold unless Stripe confirms expiration.
+      const expired = await stripeRequest(
+        c.stripeKey,
+        `checkout/sessions/${encodeURIComponent(session.id)}/expire`,
+        new URLSearchParams(),
+      );
+      if (expired.id !== session.id || expired.status !== 'expired')
+        throw new Error('Checkout expiration could not be verified.');
+      await db
+        .prepare(
+          "UPDATE bookings SET status='expired' WHERE id=? AND status='held'",
+        )
+        .bind(id)
+        .run();
+      return json(
+        {
+          error:
+            'Checkout totals could not be verified. No payment has been taken. Please contact the tour operator.',
+        },
+        502,
+      );
+    }
     return json({ url: session.url });
   } catch (e) {
-    if ((e as { definitive?: boolean }).definitive)
+    if (!sessionCreated && (e as { definitive?: boolean }).definitive)
       await db
         .prepare(
           "UPDATE bookings SET status='failed' WHERE id=? AND status='held'",

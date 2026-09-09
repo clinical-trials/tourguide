@@ -21,6 +21,9 @@ export async function GET(req: Request) {
       part: booking.part,
       guests: booking.guests,
       total: booking.total,
+      pricing: booking.pricing_snapshot
+        ? JSON.parse(booking.pricing_snapshot)
+        : null,
       returnToWharf: Boolean(booking.return_to_wharf),
       reference: booking.id.slice(0, 8).toUpperCase(),
       meeting: c.meeting,

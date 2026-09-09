@@ -29,6 +29,10 @@ type Availability = {
 const localDate = (s: string) => new Date(s + 'T12:00:00');
 const dateKey = (d: Date) =>
   `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+const money = (cents: number) =>
+  new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(
+    cents / 100,
+  );
 function initialDate() {
   let d = sfDate();
   while (!canBook(d, 'A') && !canBook(d, 'B')) {
@@ -126,6 +130,7 @@ export default function Booking() {
           guests,
           returnToWharf: back,
           ageConfirmed: age,
+          quotedTotal: prices.total,
         }),
       });
       const result = (await response.json()) as { url: string; error?: string };
@@ -260,11 +265,18 @@ export default function Booking() {
             </label>
             <div className="booking-total">
               <span>
-                {guests} {guests === 1 ? 'adult' : 'adults'}
+                {prices.chargesReviewed ? 'Total' : 'Subtotal'} · {guests}{' '}
+                {guests === 1 ? 'adult' : 'adults'}
                 {back ? ' + return' : ''}
               </span>
-              <strong>${prices.total / 100}</strong>
+              <strong>{money(prices.total)}</strong>
             </div>
+            <p className="booking-caption">
+              Mandatory operator fees are included.{' '}
+              {prices.chargesReviewed
+                ? 'Any applicable government charges are itemized in your review.'
+                : 'Applicable taxes and government fees will be confirmed before sales open.'}
+            </p>
             <button
               className="primary-button"
               disabled={!validSelection || loading}
@@ -322,8 +334,53 @@ export default function Booking() {
                 <dd>Paid separately</dd>
               </div>
               <div>
-                <dt>Total (USD)</dt>
-                <dd>${prices.total / 100}</dd>
+                <dt>Operator fees</dt>
+                <dd>Included</dd>
+              </div>
+              {prices.chargesReviewed ? (
+                <>
+                  <div>
+                    <dt>Subtotal</dt>
+                    <dd>{money(prices.subtotal)}</dd>
+                  </div>
+                  {prices.fees.length ? (
+                    prices.fees.map((fee) => (
+                      <div key={fee.id}>
+                        <dt>{fee.label}</dt>
+                        <dd>{money(fee.amount)}</dd>
+                      </div>
+                    ))
+                  ) : (
+                    <div>
+                      <dt>Government fees</dt>
+                      <dd>{money(0)}</dd>
+                    </div>
+                  )}
+                  {prices.taxes.length ? (
+                    prices.taxes.map((tax) => (
+                      <div key={tax.id}>
+                        <dt>
+                          {tax.label} ({tax.percentage}%)
+                        </dt>
+                        <dd>{money(tax.amount)}</dd>
+                      </div>
+                    ))
+                  ) : (
+                    <div>
+                      <dt>Taxes</dt>
+                      <dd>{money(0)}</dd>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <div>
+                  <dt>Taxes &amp; government fees</dt>
+                  <dd>Confirmed before sales open</dd>
+                </div>
+              )}
+              <div>
+                <dt>{prices.chargesReviewed ? 'Total' : 'Subtotal'} (USD)</dt>
+                <dd>{money(prices.total)}</dd>
               </div>
             </dl>
             <p className="small">
@@ -348,7 +405,11 @@ export default function Booking() {
             <button
               className="primary-button"
               disabled={
-                !availability?.enabled || !age || !validSelection || busy
+                !availability?.enabled ||
+                !prices.chargesReviewed ||
+                !age ||
+                !validSelection ||
+                busy
               }
               onClick={pay}
             >

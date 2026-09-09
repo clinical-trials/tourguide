@@ -39,6 +39,41 @@ test('payment confirmation requires paid status, identity, currency and exact se
     assert.equal(validatePaidSession({ ...s, ...changed }, b), false);
 });
 
+test('confirmation verifies the persisted tax breakdown without using current rates', () => {
+  const b = {
+    id: 'order1',
+    stripe_session: 'cs_test',
+    total: 21085,
+    pricing_snapshot: JSON.stringify({
+      subtotal: 19500,
+      governmentFeeTotal: 0,
+      taxTotal: 1585,
+      total: 21085,
+    }),
+  };
+  const s = {
+    id: 'cs_test',
+    metadata: { booking_id: 'order1' },
+    payment_status: 'paid',
+    currency: 'usd',
+    amount_subtotal: 19500,
+    amount_total: 21085,
+    total_details: { amount_tax: 1585, amount_discount: 0, amount_shipping: 0 },
+  };
+  assert.equal(validatePaidSession(s, b), true);
+  assert.equal(
+    validatePaidSession(
+      { ...s, total_details: { ...s.total_details, amount_tax: 0 } },
+      b,
+    ),
+    false,
+  );
+  assert.equal(
+    validatePaidSession(s, { ...b, pricing_snapshot: 'invalid' }),
+    false,
+  );
+});
+
 import { DatabaseSync } from 'node:sqlite';
 import {
   CONFIRM_SQL,

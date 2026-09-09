@@ -10,7 +10,7 @@ This site is a private prelaunch review. It does not accept payment until all re
 - Guided Muni instruction is included. Guests purchase their own Muni passes and fares, including for the optional guided return. Food/drinks, cable cars, attraction admissions and game tickets are separate.
 - Guided return is $40 per person and starts after the tour. Allow about 45 minutes; delays possible.
 - Online reservations close one hour before departure and open at most 180 days ahead.
-- Whole-dollar USD prices are charged as displayed. Confirm tax treatment and all inclusions before selling.
+- Advertised USD prices include mandatory operator fees. Verified government charges are itemized before payment, calculated in cents, and included in the stored total. Read TAXES.md; the unresolved charge policy currently keeps checkout closed.
 
 ## Muni lesson delivery
 
@@ -44,7 +44,7 @@ Stripe-hosted Checkout collects customer payment/contact details. The app stores
 
 Use Stripe test mode: successful payment, declined card, expired checkout, cancelled navigation, duplicated webhook, full/partial refund, two simultaneous requests for final places, age unchecked, Monday, past time, winter DST date, and two-party $470 order with returns. Ensure paid orders remain confirmed if the guest closes the browser. Send a Stripe webhook test and verify a 2xx response from the deployed endpoint. Change to live secrets only after test orders and webhook delivery work and customer-facing policies are final.
 
-A returned success URL does not confirm payment. The server retrieves the session and checks paid status, USD currency, exact stored total and booking identity. Stripe card details never pass through this app.
+A returned success URL does not confirm payment. The server retrieves the session and checks paid status, USD currency, exact stored total and booking identity. New bookings also retain and verify their original subtotal, government fees and tax breakdown. Stripe card details never pass through this app.
 
 ## Holds and operator reconciliation
 
@@ -54,7 +54,7 @@ If a network failure occurs after Stripe may have created a session, the app con
 
 ## Verification performed
 
-Eleven automated tests cover pricing, age, dates/DST, atomic capacity, actual schema constraints, signatures and confirmation identity. Seven HTTP checks cover route loading, Monday, invalid dates, disabled payments, cross-origin requests, unverifiable receipt rejection and the live MLB feed. TypeScript and production build were checked. Regression tests also cover out-of-order full refunds, duplicate events, and complete/incomplete Stripe history during recovery. No live Stripe transaction, Stripe test checkout, or actual webhook delivery was possible without account configuration. Browser UI interaction/visual QA was not requested and was not performed. Optional WebMCP selection staging is included but its browser contract has not been verified in a supported context.
+The current 21-test suite passes, covering pricing and government charges, age, dates/DST, atomic capacity, schema migrations, signatures, confirmation identity, tax snapshots, out-of-order refunds, duplicate events, and complete/incomplete Stripe recovery. TypeScript and the production build pass. Local HTTP checks confirm the homepage loads, availability remains closed, and checkout rejects payments while setup is unresolved. Earlier HTTP checks also covered Monday, invalid dates, cross-origin requests, unverifiable receipts, and the MLB feed. No live Stripe transaction, Stripe test checkout, or actual webhook delivery was possible without account configuration. Browser interaction/visual QA was not requested and was not performed. Optional WebMCP selection staging is included but its browser contract has not been verified in a supported context.
 
 ## Sources
 

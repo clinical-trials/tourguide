@@ -16,8 +16,10 @@ const valid = {
   ageConfirmed: true,
 };
 test('calculate per-guest tour and return prices without trusting submitted totals', () => {
-  assert.deepEqual(quote(2, true), { tour: 39000, return: 8000, total: 47000 });
-  assert.deepEqual(quote(1, true), { tour: 19500, return: 4000, total: 23500 });
+  assert.equal(quote(2, true).tour, 39000);
+  assert.equal(quote(2, true).return, 8000);
+  assert.equal(quote(2, true).total, 47000);
+  assert.equal(quote(1, true).total, 23500);
   assert.equal(quote(3, false).total, 58500);
   assert.equal(quote(8, true).total, 188000);
   assert.equal(validateBooking({ ...valid, total: 1 }, now).total, 47000);

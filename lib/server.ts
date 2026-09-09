@@ -3,6 +3,7 @@ import { getDb } from '@/db';
 import { validatePaidSession } from './stripe.mjs';
 import { CONFIRM_SQL } from './inventory.mjs';
 import { locateSession } from './recovery.mjs';
+import { chargesReady } from './charge-policy.mjs';
 export function settings() {
   return {
     stripeKey: env.STRIPE_SECRET_KEY || '',
@@ -23,7 +24,8 @@ export function ready() {
     c.webhookSecret &&
     c.meeting &&
     c.contact &&
-    c.policy,
+    c.policy &&
+    chargesReady(),
   );
 }
 export function json(data: unknown, status = 200) {
@@ -39,6 +41,7 @@ export interface BookingRow {
   guests: number;
   return_to_wharf: number;
   total: number;
+  pricing_snapshot: string | null;
   status: string;
   stripe_session: string | null;
   payment_intent: string | null;

@@ -1,6 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { PARTS, departureInstant } from '@/lib/booking.mjs';
+const money = (cents: number) =>
+  new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(
+    cents / 100,
+  );
 export default function Confirmation() {
   const [data, setData] = useState<any>(null);
   const [error, setError] = useState('');
@@ -102,8 +106,52 @@ export default function Confirmation() {
                 {data.date} · {PARTS[data.part as 'A' | 'B'].time} Pacific
               </p>
               <p>
-                {data.guests} guest(s) · Paid ${data.total / 100}
+                {data.guests} guest(s) · Paid {money(data.total)}
               </p>
+              {data.pricing && (
+                <dl className="review-list">
+                  <div>
+                    <dt>Subtotal</dt>
+                    <dd>{money(data.pricing.subtotal)}</dd>
+                  </div>
+                  {data.pricing.fees.map(
+                    (fee: { id: string; label: string; amount: number }) => (
+                      <div key={fee.id}>
+                        <dt>{fee.label}</dt>
+                        <dd>{money(fee.amount)}</dd>
+                      </div>
+                    ),
+                  )}
+                  {data.pricing.taxes.map(
+                    (tax: { id: string; label: string; amount: number }) => (
+                      <div key={tax.id}>
+                        <dt>{tax.label}</dt>
+                        <dd>{money(tax.amount)}</dd>
+                      </div>
+                    ),
+                  )}
+                  {!data.pricing.taxes.length && (
+                    <div>
+                      <dt>Taxes</dt>
+                      <dd>{money(0)}</dd>
+                    </div>
+                  )}
+                  {!data.pricing.fees.length && (
+                    <div>
+                      <dt>Government fees</dt>
+                      <dd>{money(0)}</dd>
+                    </div>
+                  )}
+                  <div>
+                    <dt>Operator fees</dt>
+                    <dd>Included</dd>
+                  </div>
+                  <div>
+                    <dt>Paid (USD)</dt>
+                    <dd>{money(data.total)}</dd>
+                  </div>
+                </dl>
+              )}
               <p>Meet: {data.meeting}</p>
               {data.returnToWharf && (
                 <p>

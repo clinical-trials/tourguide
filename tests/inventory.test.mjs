@@ -5,7 +5,7 @@ import { CLAIM_SQL, COUNT_SQL } from '../lib/inventory.mjs';
 test('atomic seat claim prevents overselling, even when prior availability is stale', () => {
   const db = new DatabaseSync(':memory:');
   db.exec(
-    'CREATE TABLE bookings(id TEXT PRIMARY KEY,tour_date TEXT,part TEXT,guests INTEGER,return_to_wharf INTEGER,total INTEGER,status TEXT,created_at INTEGER)',
+    'CREATE TABLE bookings(id TEXT PRIMARY KEY,tour_date TEXT,part TEXT,guests INTEGER,return_to_wharf INTEGER,total INTEGER,pricing_snapshot TEXT,status TEXT,created_at INTEGER)',
   );
   const claim = db.prepare(CLAIM_SQL);
   const args = (id, n) => [
@@ -15,6 +15,7 @@ test('atomic seat claim prevents overselling, even when prior availability is st
     n,
     0,
     n * 19500,
+    null,
     1,
     '2026-09-09',
     'A',

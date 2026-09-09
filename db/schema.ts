@@ -14,6 +14,7 @@ export const bookings = sqliteTable(
     guests: integer('guests').notNull(),
     returnToWharf: integer('return_to_wharf').notNull(),
     total: integer('total').notNull(),
+    pricingSnapshot: text('pricing_snapshot'),
     status: text('status').notNull().default('held'),
     createdAt: integer('created_at').notNull(),
     stripeSession: text('stripe_session'),
