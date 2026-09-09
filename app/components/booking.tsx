@@ -197,6 +197,13 @@ export default function Booking() {
         </p>
       </div>
       <div className="booking-inner">
+        {availability && !availability.enabled && (
+          <p className="booking-state" role="status">
+            <strong>Tour planning preview.</strong> Ticket sales are not open
+            yet. Choose your date and branch to review your trip; no places are
+            reserved.
+          </p>
+        )}
         {!review ? (
           <>
             <div className="calendar-heading">
@@ -211,6 +218,10 @@ export default function Booking() {
                 value={date}
                 min={sfDate()}
                 max={dateKey(new Date(Date.now() + 180 * 86400000))}
+                onInput={(event) => {
+                  if (event.currentTarget.value)
+                    chooseDate(event.currentTarget.value);
+                }}
                 onChange={(event) => {
                   if (event.target.value) chooseDate(event.target.value);
                 }}

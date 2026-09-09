@@ -416,10 +416,18 @@ h3 {
   font-size: 0.875rem;
   font-weight: 600;
 }
-.route-bottom a {
+.route-bottom :is(a, button) {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+}
+.route-bottom button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
 }
 .route-note {
   display: flex;
@@ -1371,7 +1379,7 @@ footer {
   font-size: 0.75rem;
   padding-top: 0.2rem;
 }
-.route-bottom a {
+.route-bottom :is(a, button) {
   text-decoration: underline;
   text-underline-offset: 5px;
   min-height: 2.75rem;
@@ -1380,10 +1388,10 @@ footer {
   align-items: center;
   padding-top: 0.8rem;
 }
-.route-bottom a svg {
+.route-bottom :is(a, button) svg {
   transition: transform 180ms steps(3);
 }
-.route-bottom a:hover svg {
+.route-bottom :is(a, button):hover svg {
   transform: translate(3px, -3px);
 }
 .city-note {
