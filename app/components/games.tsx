@@ -72,6 +72,29 @@ export default function Games() {
         >
           Official Giants schedule <ArrowUpRight size={16} />
         </a>
+        <div className="basketball-schedules">
+          <p className="eyebrow">COURTSIDE / CHASE CENTER</p>
+          <p>
+            More of a basketball fan? Catch the Warriors or Valkyries at Chase
+            Center. Check their home games when planning your day.
+          </p>
+          <a
+            className="text-link"
+            href="https://www.nba.com/warriors/schedule"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Official Warriors schedule <ArrowUpRight size={16} />
+          </a>
+          <a
+            className="text-link"
+            href="https://valkyries.wnba.com/schedule"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Official Valkyries schedule <ArrowUpRight size={16} />
+          </a>
+        </div>
         <p className="small game-disclaimer">
           Game tickets sold separately. Times shown in San Francisco time and
           subject to change.

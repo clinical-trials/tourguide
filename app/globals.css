@@ -839,6 +839,10 @@ footer {
   display: flex;
   gap: 0.3rem;
   align-items: center;
+  min-height: 2.75rem;
+}
+.basketball-schedules {
+  margin-top: 1.75rem;
 }
 .game-disclaimer {
   margin-top: 1rem;

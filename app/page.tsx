@@ -206,8 +206,8 @@ export default function Home() {
                   <div>
                     Mission Bay
                     <small>
-                      OpenAI’s neighborhood, Chase Center, and a changing
-                      waterfront.
+                      OpenAI’s neighborhood, Chase Center—home to the Warriors
+                      and Valkyries—and a changing waterfront.
                     </small>
                   </div>
                 </li>
