@@ -1,22 +1,27 @@
 # AI SF Tour business and design files
 
-All 25 deliverables prepared in this project are saved here. The `current` folder contains the latest completed materials; `archive` retains earlier drafts and proofs for reference. File names and contents match the delivered originals. `SHA256SUMS` records their checksums.
+This collection contains 30 deliverables. The `current` folder contains the completed materials indexed below; `archive` retains earlier drafts and proofs for reference. File names and contents match the delivered originals. `SHA256SUMS` records their checksums.
 
 ## Current materials
 
 | Material | Download |
 | --- | --- |
+| Full business plan: 41 pages covering the offer, pilot, economics, assumptions, goals and launch decisions | [PDF](current/AI-SF-Tour-Full-Business-Plan.pdf) |
+| Next 15 steps to cashflow: owners, dependencies, budgets and completion checks | [8-page PDF](current/AI-SF-Tour-15-Steps-to-Cashflow.pdf) |
+| Assumptions and goals: 80 recorded assumptions and 18 measurable goals | [Read on GitHub](current/AI-SF-Tour-Assumptions-and-Goals.md) |
+| OpenAI and Anthropic: original comparison script and guide delivery notes | [Read on GitHub](current/AI-SF-Tour-OpenAI-and-Anthropic-Script.md) |
+| San Francisco and Fisherman’s Wharf: verified pricing rules, tax classification, operator fees, sign permissions and remaining confirmations | [Read on GitHub](current/AI-SF-Tour-SF-and-Wharf-Fee-Verification.md) |
 | Six-week paid pilot: Branch B schedule, $3,000 starting-cash allowance, guest targets, operating margins and decision rules | [Read on GitHub](current/AI-SF-Tour-Six-Week-Pilot-Plan.md) |
 | Delivery costs and cost reduction: owner labor, capacity, preparation, acquisition and measurable savings | [Read on GitHub](current/AI-SF-Tour-Costs-and-Cost-Reduction.md) |
 | ROI and profit margins: price scenarios, startup funding, payback and downside cases | [Read on GitHub](current/AI-SF-Tour-ROI-and-Profit-Margins.md) |
 | Latest market and value review: eight Bay Area comparisons, visitor spend, paid guide economics and a proposed $100 pilot | [PDF addendum](current/AI-SF-Tour-Market-and-Value-Review.pdf) · [Read on GitHub](current/AI-SF-Tour-Market-and-Value-Review.md) |
-| Guide training and business plan, with Branches A/B/C, route timings, coffee stops, fog guidance and labor budget | [PDF](current/AI-SF-Tour-Guide-Training-and-Business-Plan.pdf) |
+| Latest guide training manual: 28 pages with Branches A/B/C, company addresses, OpenAI/Anthropic and AMD/NVIDIA scripts, Apple future option, coffee stops, fog and labor budget | [PDF](current/AI-SF-Tour-Guide-Training-and-Business-Plan.pdf) |
 | Pricing review: official Alcatraz comparison and $50/$75/$100/$195 A/B scenarios | [PDF addendum](current/AI-SF-Tour-Pricing-Review.pdf) |
 | Backend and operations manual, including the guide appendix | [PDF](current/AI-SF-Tour-Backend-and-Operations.pdf) |
 | Editable business budget | [Excel workbook](current/AI-SF-Tour-Budget.xlsx) |
 | 24 × 72-inch banner | [Print PDF](current/AI-SF-Tour-Banner-24x72.pdf) · [Preview](current/AI-SF-Tour-Banner-Preview.png) |
 | 18 × 24-inch advertisement | [Print PDF](current/AI-SF-Tour-Advertisement-18x24.pdf) · [Preview](current/AI-SF-Tour-Advertisement-Preview.png) |
-| Guide, budget and advertising bundle | [ZIP](current/AI-SF-Tour-Training-and-Advertising-Pack.zip) |
+| Guide, budget and advertising bundle: September 9 snapshot, predating the updated standalone guide | [ZIP](current/AI-SF-Tour-Training-and-Advertising-Pack.zip) |
 | Animated photo exports and attribution | [GIF pack](current/AI-SF-Tour-Animated-GIFs.zip) |
 | Bridge, bus and T-train illustrations | [Icon pack](current/AI-SF-Tour-Kawaii-Icons.zip) |
 | Website operations notes | [Markdown](current/AI-SF-Tour-Website-Operations.md) |
@@ -24,7 +29,13 @@ All 25 deliverables prepared in this project are saved here. The `current` folde
 
 The PDF manuals and ZIP bundles are dated snapshots. For subsequent website changes, use the repository's [OPERATIONS.md](../OPERATIONS.md), [TAXES.md](../TAXES.md) and source code. The latest booking update preserves selections when returning from checkout and explicitly lists coffee, food and drinks as paid separately in the booking review.
 
-Start with the six-week pilot and cost-reduction notes for the latest lean-launch recommendation. They model 12 owner-guided Branch B departures at a proposed $100 price, four guests minimum and eight maximum, with a $3,000 starting-cash allowance subject to actual fee and insurance quotes. At four, five and six guests per departure, modeled operating surplus after owner operating labor is $558, $1,659.60 and $2,761.20 respectively, before initial setup costs and income taxes. Around 64 paid guests recover the modeled operating costs, initial setup spending and initial owner setup time. This limited pilot is a different operating scenario from the full monthly schedule and funding model below. These two Markdown addenda are outside the earlier PDF, workbook and ZIP snapshots.
+Start with the full business plan, assumptions register and 15-step cashflow checklist for the consolidated planning materials. The 28-page guide was updated later on September 14 with the company-address research and scripts. Pages 26-28 identify AMD at 2485 Augustine Drive, Santa Clara, and NVIDIA at 2788 San Tomas Expressway, Santa Clara, as South Bay story references outside the tour routes. The proposed NVIDIA Mission Rock location at 1090 Dr. Maya Angelou Lane remains labeled "rumored to be true / unconfirmed." Apple Union Square is a future route option. These additions do not activate new stops or ticket sales.
+
+The guide's two credited SFGATE article photographs accompany training commentary and source analysis. Credits and the image-use note are on page 20; no general marketing or republication license is represented. The older ZIP bundles and backend manual do not contain the later guide additions. Use the standalone guide PDF for the latest version.
+
+The September 14 SF/Wharf fee verification is a separate research memo, outside the earlier PDFs and ZIPs. It identifies no established government charge on the current guide-service transaction. Mandatory operator costs remain within advertised prices; the actual tax determination and exact Wharf meeting/sign permissions remain unresolved. The checkout charge policy has not been marked reviewed.
+
+The six-week pilot and cost-reduction notes provide supporting detail for the lean-launch recommendation. They model 12 owner-guided Branch B departures at a proposed $100 price, four guests minimum and eight maximum, with a $3,000 starting-cash allowance subject to actual fee and insurance quotes. At four, five and six guests per departure, modeled operating surplus after owner operating labor is $558, $1,659.60 and $2,761.20 respectively, before initial setup costs and income taxes. Around 64 paid guests recover the modeled operating costs, initial setup spending and initial owner setup time. This limited pilot is a different operating scenario from the full monthly schedule and funding model below. The full business plan consolidates the pilot and its assumptions; the guide's earlier financial tables, workbook and ZIP snapshots retain the original full-schedule model.
 
 The market and value review (14 September 2026) expands the earlier Alcatraz pricing addendum. It recommends testing $100 for a focused 3.5-hour human-led tour, with a proposed four-guest departure minimum. It preserves the $40/hour guide allowance and identifies the SF minimum wage of $19.61/hour effective July 1, 2026. At $100, the full monthly model needs 130 guests without return sales, or 189 in a conservative scenario with an assumed additional 20% sales-channel cost and 15% labor-cost uplift. These are planning sensitivities, not forecasts or a complete employee payroll budget.
 

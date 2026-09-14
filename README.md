@@ -14,9 +14,11 @@ This GitHub page contains the project files. Use the link above to view the work
 
 **[Open all business and design files →](business/README.md)**
 
-Includes the guide training and business plan PDF, backend manual, editable budget, print banners and advertisements, animated GIFs, and kawaii icons. Earlier drafts are preserved in a labeled archive.
+Includes the latest 28-page guide training PDF, 41-page full business plan, 15-step cashflow checklist, assumptions and goals register, comparison scripts, backend manual, editable budget, print banners and advertisements, animated GIFs, and kawaii icons. Earlier drafts are preserved in a labeled archive.
 
-The latest planning addenda are the [six-week paid pilot](business/current/AI-SF-Tour-Six-Week-Pilot-Plan.md) and [delivery costs and cost reduction](business/current/AI-SF-Tour-Costs-and-Cost-Reduction.md). They cover a proposed $100 Branch B pilot, a $3,000 starting-cash allowance, success benchmarks and savings targets. These are planning scenarios; the website's price and booking status have not changed.
+Download the [latest tour guide PDF](business/current/AI-SF-Tour-Guide-Training-and-Business-Plan.pdf), [full business plan PDF](business/current/AI-SF-Tour-Full-Business-Plan.pdf), or [15 steps to cashflow PDF](business/current/AI-SF-Tour-15-Steps-to-Cashflow.pdf). The guide includes the OpenAI/Anthropic comparison, a future Apple Union Square option, the unconfirmed NVIDIA Mission Rock location and verified AMD/NVIDIA Santa Clara addresses as South Bay story references.
+
+Supporting planning addenda include the [six-week paid pilot](business/current/AI-SF-Tour-Six-Week-Pilot-Plan.md) and [delivery costs and cost reduction](business/current/AI-SF-Tour-Costs-and-Cost-Reduction.md). They cover a proposed $100 Branch B pilot, a $3,000 starting-cash allowance, success benchmarks and savings targets. These are planning scenarios; the website's price and booking status have not changed.
 
 ## Tour branches
 
