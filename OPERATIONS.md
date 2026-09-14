@@ -78,7 +78,9 @@ Outerlands currently lists brunch Saturday–Sunday 9:30 AM–2 PM, first come f
 
 The four tour photos use six-second GIF loops exported from the existing fine-pixel shader. Each has a 360px phone version (under 500KB) and a 640px version (under 1.5MB), with matching WebP stills. All eight GIFs were decoded and checked for 60 distinct frames, six-second duration, infinite repeat and exact first-frame poster matches. See public/motion/assets.json for source credits, Creative Commons licenses and export details.
 
-PixelPhoto loads a GIF only when its figure is visible, the page is active, reduced motion is off and the guest has not paused it. Pausing or leaving the viewport unmounts the animation. A still remains visible during loading or an error; a failed poster falls back to the original photograph. Reduced-motion settings always show stills. Keep both sizes and matching stills together when replacing assets, retain their licenses, and recheck phone controls after edits. The service worker does not cache GIFs, API responses, bookings or receipts.
+PixelPhoto automatically loads a GIF only when its figure is visible, the page is active and reduced motion is off. The photo pause/resume buttons were removed on 14 September 2026. Leaving the viewport or hiding the page unmounts the animation. A still remains visible during loading or an error; a failed poster falls back to the original photograph. Reduced-motion settings always show stills. Keep both sizes and matching stills together when replacing assets, retain their licenses, and recheck phone image playback after edits. The service worker does not cache GIFs, API responses, bookings or receipts.
+
+The 14 September update was checked in the phone preview: all four figures contain no buttons, and the hero and Branch B photos load their 360px GIFs automatically when visible. TypeScript and the production build passed.
 
 ## Sources
 

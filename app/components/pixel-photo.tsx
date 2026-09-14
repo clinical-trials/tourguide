@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { ArrowUpRight, Pause, Play } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 type PixelPhotoProps = {
   src?: string;
@@ -60,9 +60,7 @@ export default function PixelPhoto({
   focusY = 0.62,
 }: PixelPhotoProps) {
   const figureRef = useRef<HTMLElement>(null);
-  const [paused, setPaused] = useState(false);
   const [eligible, setEligible] = useState(false);
-  const [motionAllowed, setMotionAllowed] = useState(false);
   const [gifFailed, setGifFailed] = useState(false);
   const [posterFailed, setPosterFailed] = useState(false);
 
@@ -72,7 +70,6 @@ export default function PixelPhoto({
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let visible = false;
     function syncPlayback() {
-      setMotionAllowed(!reducedMotion.matches);
       setEligible(visible && !document.hidden && !reducedMotion.matches);
     }
     const observer = new IntersectionObserver(([entry]) => {
@@ -90,7 +87,7 @@ export default function PixelPhoto({
     };
   }, []);
 
-  const playing = eligible && !paused && !gifFailed;
+  const playing = eligible && !gifFailed;
   return (
     <figure
       ref={figureRef}
@@ -124,17 +121,6 @@ export default function PixelPhoto({
           focusY={focusY}
           onError={() => setGifFailed(true)}
         />
-      )}
-      {motionAllowed && !gifFailed && (
-        <button
-          className="photo-motion-toggle"
-          type="button"
-          onClick={() => setPaused((value) => !value)}
-          aria-label={`${paused ? 'Resume' : 'Pause'} photo motion: ${caption}`}
-        >
-          {paused ? <Play size={14} /> : <Pause size={14} />}
-          <span>{paused ? 'Resume' : 'Pause'}</span>
-        </button>
       )}
       <figcaption>
         <span>{caption}</span>
