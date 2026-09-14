@@ -1,11 +1,13 @@
 # AI SF Tour business and design files
 
-All 23 deliverables prepared in this project are saved here. The `current` folder contains the latest completed materials; `archive` retains earlier drafts and proofs for reference. File names and contents match the delivered originals. `SHA256SUMS` records their checksums.
+All 25 deliverables prepared in this project are saved here. The `current` folder contains the latest completed materials; `archive` retains earlier drafts and proofs for reference. File names and contents match the delivered originals. `SHA256SUMS` records their checksums.
 
 ## Current materials
 
 | Material | Download |
 | --- | --- |
+| Six-week paid pilot: Branch B schedule, $3,000 starting-cash allowance, guest targets, operating margins and decision rules | [Read on GitHub](current/AI-SF-Tour-Six-Week-Pilot-Plan.md) |
+| Delivery costs and cost reduction: owner labor, capacity, preparation, acquisition and measurable savings | [Read on GitHub](current/AI-SF-Tour-Costs-and-Cost-Reduction.md) |
 | ROI and profit margins: price scenarios, startup funding, payback and downside cases | [Read on GitHub](current/AI-SF-Tour-ROI-and-Profit-Margins.md) |
 | Latest market and value review: eight Bay Area comparisons, visitor spend, paid guide economics and a proposed $100 pilot | [PDF addendum](current/AI-SF-Tour-Market-and-Value-Review.pdf) · [Read on GitHub](current/AI-SF-Tour-Market-and-Value-Review.md) |
 | Guide training and business plan, with Branches A/B/C, route timings, coffee stops, fog guidance and labor budget | [PDF](current/AI-SF-Tour-Guide-Training-and-Business-Plan.pdf) |
@@ -21,6 +23,8 @@ All 23 deliverables prepared in this project are saved here. The `current` folde
 | Taxes and checkout notes | [Markdown](current/AI-SF-Tour-Taxes-and-Checkout.md) |
 
 The PDF manuals and ZIP bundles are dated snapshots. For subsequent website changes, use the repository's [OPERATIONS.md](../OPERATIONS.md), [TAXES.md](../TAXES.md) and source code. The latest booking update preserves selections when returning from checkout and explicitly lists coffee, food and drinks as paid separately in the booking review.
+
+Start with the six-week pilot and cost-reduction notes for the latest lean-launch recommendation. They model 12 owner-guided Branch B departures at a proposed $100 price, four guests minimum and eight maximum, with a $3,000 starting-cash allowance subject to actual fee and insurance quotes. At four, five and six guests per departure, modeled operating surplus after owner operating labor is $558, $1,659.60 and $2,761.20 respectively, before initial setup costs and income taxes. Around 64 paid guests recover the modeled operating costs, initial setup spending and initial owner setup time. This limited pilot is a different operating scenario from the full monthly schedule and funding model below. These two Markdown addenda are outside the earlier PDF, workbook and ZIP snapshots.
 
 The market and value review (14 September 2026) expands the earlier Alcatraz pricing addendum. It recommends testing $100 for a focused 3.5-hour human-led tour, with a proposed four-guest departure minimum. It preserves the $40/hour guide allowance and identifies the SF minimum wage of $19.61/hour effective July 1, 2026. At $100, the full monthly model needs 130 guests without return sales, or 189 in a conservative scenario with an assumed additional 20% sales-channel cost and 15% labor-cost uplift. These are planning sensitivities, not forecasts or a complete employee payroll budget.
 
