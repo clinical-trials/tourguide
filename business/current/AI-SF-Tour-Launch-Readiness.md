@@ -61,9 +61,10 @@ Record separately: walking distance ______; steps/grades and alternatives ______
 ## Existing records to use
 
 - `AI-SF-Tour-Guide-Training-and-Business-Plan.pdf`: 31-page guide, including future route options and source notes.
-- `AI-SF-Tour-Full-Business-Plan.pdf`: 45-page plan with the September 15 pricing reassessment and updated pilot economics.
+- `AI-SF-Tour-Full-Business-Plan.pdf`: 53-page plan with the September 15 Wharf market review, price ceilings, pilot and private-tour economics.
 - `AI-SF-Tour-15-Steps-to-Cashflow.pdf`: prioritized eight-page action plan.
-- `AI-SF-Tour-Assumptions-and-Goals.md`: the existing 80 assumptions and 18 goals; actual operating results remain unrecorded.
+- `AI-SF-Tour-Assumptions-and-Goals.md`: 80 core assumptions, eight supplemental pricing proposals and 18 goals; actual results remain unrecorded.
+- `AI-SF-Tour-Pricing-Market-Review.md`: concise market review and financial rerun; $225 is a conditional test, not a validated ceiling.
 - `AI-SF-Tour-SF-and-Wharf-Fee-Verification.md`: dated research and agency questions, not operating permission.
 
 No tickets were sold, third parties contacted, accounts created, payments taken, or public audience changes made in this readiness review.

@@ -206,4 +206,21 @@ All goal statuses: **Proposed / not measured**. Accountable role: owner/operator
 
 When an estimate changes, preserve its prior value in the log, update dependent calculations, and use the same selected price and terms in the website, checkout and collateral. Goals may be revised with a stated reason; do not retroactively redefine the sample to make a missed goal pass.
 
-Source keys [01]-[40] refer to the clickable reference list in the Full Business Plan PDF. External values in this register were checked in the September 8-14 research, with SF wage, Stripe rates and food/e-bike/Santa Fe benchmarks rechecked September 15. Other source dates remain as recorded. Unresolved entries require actual operating evidence.
+Source keys [01]-[48] refer to the clickable reference list in the Full Business Plan PDF. External values in this register were checked in the September 8-14 research, with SF wage, Stripe rates and food/e-bike/Santa Fe benchmarks rechecked September 15. Other source dates remain as recorded. Unresolved entries require actual operating evidence.
+
+## SF / Fisherman’s Wharf price-ceiling supplement
+
+Added September 15, 2026. P01-P08 are additional proposals/estimates, not achieved results or active selling rules. Owner/operator is accountable for recording evidence. The six-week $149 baseline remains unchanged.
+
+| ID | Topic | Proposal / assumption | Validation and review |
+| --- | --- | --- | --- |
+| P01 | Shared-tour price band | $149-$195 is the working band; $225 is a controlled test ceiling, not measured willingness to pay. | Compare paid conversion and contribution per offered date; before any increase. |
+| P02 | Higher shared prices | $249/$275/$295 are sensitivity cases, not recommendations for the existing offer. | Require a justified product/segment and paid demand; no automatic release. |
+| P03 | Branch distinction | A: first test $149-$175, later $195; B: target $195, test $225; C: provisional $195, later test $225. | A/C need separate route readiness and price evidence; no new active fares. |
+| P04 | Private A/B proposal | $795 for 1-4; add $195 for each additional guest, maximum eight. $995 for 1-4 is a later stress/test case. | Test actual private inquiries and paid bookings; measure displaced shared contribution. |
+| P05 | Corporate proposal | $1,195 for up to six, with a defined specialist brief; extra guests individually quoted. | Confirm guide expertise, scope and buyer budget; not a promised corporate sale. |
+| P06 | Private operating hours | 5.5 owner hours/private booking; 7.5 for corporate, including 3.5 guest hours. $40/hour. | Time customization, sales, guiding and follow-up; add overruns and employee costs. |
+| P07 | Private six-week model | 12 reserved dates; 3 admin hours/week; $900 overhead; $5.70 guide fare/date; $2 materials/guest. | One payment per party; 2.9% + $0.30 plus 3% reserve; replace with actual fees and quotes. |
+| P08 | Demand and added channel cost | Attendance drops are illustrative, not estimated elasticity. Added 20% commission is a stress assumption. | Record all dates, price, customer source, losses and hours; compare like-for-like channels. |
+
+After a successful $195 test block, test $225 on four comparable dates. If $195 delivered 24 paid guests, 21 at $225 preserve modeled contribution at unchanged costs. Preserve the four-person departure rule and value/timing/margin gates. This is directional evidence, not a measured market ceiling. No website price or sales setting changed.

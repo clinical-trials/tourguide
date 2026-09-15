@@ -14,7 +14,9 @@ This GitHub page contains the project files. Use the link above to view the work
 
 **[Open all business and design files →](business/README.md)**
 
-Includes the latest 31-page guide training PDF, 45-page full business plan, 15-step cashflow checklist, assumptions and goals register, comparison scripts, backend manual, editable budget, print banners and advertisements, animated GIFs, and kawaii icons. Earlier drafts are preserved in a labeled archive.
+Includes the latest 31-page guide training PDF, 53-page full business plan, 15-step cashflow checklist, assumptions and goals register, comparison scripts, backend manual, editable budget, print banners and advertisements, animated GIFs, and kawaii icons. Earlier drafts are preserved in a labeled archive.
+
+Review the [SF / Fisherman’s Wharf pricing analysis](business/current/AI-SF-Tour-Pricing-Market-Review.md): branch-specific price tests, $225 shared-tour upside, demand-loss scenarios and separately costed private bookings. The current website price remains $195.
 
 Download the [latest tour guide PDF](business/current/AI-SF-Tour-Guide-Training-and-Business-Plan.pdf), [full business plan PDF](business/current/AI-SF-Tour-Full-Business-Plan.pdf), or [15 steps to cashflow PDF](business/current/AI-SF-Tour-15-Steps-to-Cashflow.pdf). The guide includes the OpenAI/Anthropic comparison, a future Apple/Nintendo/World Union Square option with the World biometric-verification and sneaker story, the unconfirmed NVIDIA Mission Rock location and verified AMD/NVIDIA Santa Clara addresses as South Bay story references.
 
