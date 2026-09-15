@@ -13,7 +13,7 @@ Reviewed September 15, 2026. This records observed readiness and remaining work;
 | Payment setup | Hosted settings contain the sales switch and site address. Stripe secret/webhook settings, meeting point, contact email and cancellation policy are not configured. No real Stripe checkout or webhook was completed. |
 | Website address | Hosted `SITE_URL` matches the current review site. The code and example files contained an older hostname; this update removes that fallback. Missing or malformed HTTPS origins now keep checkout closed. |
 | Domain | No custom domain is attached to the Sites project. This does not establish whether the operator owns `aisftour.com`. Connect and test it before distributing printed QR material. |
-| Pricing | The site still offers the planned $195 A/B price and $40 optional guided return. The $100 Branch B pilot and four-guest minimum are proposals, not implemented booking rules. |
+| Pricing | The site still offers the planned $195 A/B price and $40 optional guided return. The proposed $149 Branch B pilot (September 15 pricing revision) and four-guest minimum are proposals, not implemented booking rules. |
 | Charges | Checkout charge policy is still unreviewed. No tour tax or government surcharge has been activated. Use the dated September 14 fee memo for the research and unresolved questions. |
 | Code verification | All 30 tests passed. TypeScript and the production build passed. Local checks returned a working homepage, disabled availability and a 503 response when checkout was attempted. These checks do not replace Stripe acceptance testing. |
 | Guide | Latest manual has 31 pages. Apple, Nintendo and World are future Branch A options. NVIDIA Mission Rock remains unconfirmed. These additions are not part of the proposed Branch B pilot promise. |
@@ -23,7 +23,7 @@ Reviewed September 15, 2026. This records observed readiness and remaining work;
 
 | Decision | Planning recommendation | Evidence to record |
 | --- | --- | --- |
-| Pilot offer | Test Branch B only, two afternoon departures weekly for six paid weeks, four guests minimum and eight maximum. | Selected price, departure minimum and operating days. The proposed $100 price still needs an operator decision. |
+| Pilot offer | Test Branch B only, two afternoon departures weekly for six paid weeks, four guests minimum and eight maximum. | Selected price, departure minimum and operating days. The recommended $149 price replaces the earlier $100 proposal and still needs an operator decision. |
 | Available cash | Use the existing $3,000 provisional starting-cash model until actual quotes replace its allowances. | Funding available, spending ceiling, insurance/permit quotes and owner draw needs. |
 | Meeting and customer contact | One precise, approved Wharf meeting point and a monitored support address. | Street-level pin, permitted use, accessible arrival instructions and contact details. |
 | Refunds and minimum departure | Write the promised broadly refundable terms precisely, including timing, customer changes, operator cancellations and the proposed 48-hour minimum-group notice. | Final customer wording and review. Do not activate a four-person minimum without stating how underfilled departures are handled. |
@@ -61,7 +61,7 @@ Record separately: walking distance ______; steps/grades and alternatives ______
 ## Existing records to use
 
 - `AI-SF-Tour-Guide-Training-and-Business-Plan.pdf`: 31-page guide, including future route options and source notes.
-- `AI-SF-Tour-Full-Business-Plan.pdf`: 41-page consolidated plan and economics.
+- `AI-SF-Tour-Full-Business-Plan.pdf`: 45-page plan with the September 15 pricing reassessment and updated pilot economics.
 - `AI-SF-Tour-15-Steps-to-Cashflow.pdf`: prioritized eight-page action plan.
 - `AI-SF-Tour-Assumptions-and-Goals.md`: the existing 80 assumptions and 18 goals; actual operating results remain unrecorded.
 - `AI-SF-Tour-SF-and-Wharf-Fee-Verification.md`: dated research and agency questions, not operating permission.

@@ -1,5 +1,5 @@
 # AI SF Tour - assumptions register and goals
-Updated September 14, 2026. Owner/operator is the proposed accountable role for every entry; advisers may provide evidence. No external assignment or recurring reminder has been created.
+Updated September 15, 2026. Owner/operator is the proposed accountable role for every entry; advisers may provide evidence. No external assignment or recurring reminder has been created.
 
 ## How to use this register
 
@@ -17,19 +17,19 @@ A sourced input records the evidence date, not permanent validity. A recorded de
 
 ## Current model baseline
 
-- Pilot: proposed $100, 12 departures, 4-8 guests, 4.5 owner hours/run, 3 admin hours/week, $40/hour, 16 initial setup hours.
+- Pilot: proposed $149 (September 15 recommendation), 12 departures, 4-8 guests, 4.5 owner hours/run, 3 admin hours/week, $40/hour, 16 initial setup hours.
 - Starting cash: $3,000 = $1,350 setup cash + $900 pilot overhead + $750 retained cushion; $640 initial owner setup labor is additional economic cost.
-- Pilot operating surplus = delivered paid guests x $91.80 - $3,848.40 when all 12 departures run under the modeled assumptions.
+- Pilot operating surplus = delivered paid guests x $137.909 - $3,848.40 when all 12 departures run under the modeled assumptions.
 - Full-cost result = operating surplus - $1,350 - $640. The $750 cushion is not expensed again.
 - Scale: separate original 52-departure/month scenario; $11,897.20 committed monthly cost and $28,428.90 funding. Do not mix its 4-hour labor or return assumptions into the pilot.
-- Priority order: this six-week pilot and consolidated business plan supersede the earlier four-week pilot proposal. Older PDF/workbook files remain dated snapshots.
+- Priority order: the September 15 full business plan and this register replace the $100 recommendation with a $149 pilot proposal. Older pilot/cashflow/market PDFs, notes and workbook remain dated snapshots. Website $195 is unchanged; the six-week pilot also supersedes the earlier four-week proposal.
 
 ## Offer and demand
 
 | ID | Status | Assumption / current value | Validation / evidence needed | Review deadline | Actual result |
 | --- | --- | --- | --- | --- | --- |
 | A01 | D | Current A/B website ticket: $195 per person. | Recorded offer; pilot pricing has not replaced it. Reconcile collateral after a pricing decision. | Before sales | Not recorded |
-| A02 | P | Pilot ticket: $100; initial lead product Branch B. | Use full-price delivered bookings to test willingness to pay; success does not validate $195 demand. | Before sales; week 6 | Not recorded |
+| A02 | P | Pilot ticket: $149; initial lead product Branch B. | Sep 15 recommendation replaces $100; not activated. Validate with paid guests. Test $195 separately using plan page 43. | Before sales; week 6 | Not recorded |
 | A03 | D | Optional guided Wharf return: $40 per buyer. | Describe as additional guide time; transit fares are separate. Confirm duration and actual take-up. | Before sales; each run | Not recorded |
 | A04 | D | Guests must be older than 15 (16+); maximum eight guests. | Check age acknowledgment and capacity; finalize under-18 and access arrangements. | Before sales | Not recorded |
 | A05 | D | A/B guest experience: 3.5 hours; fares, coffee and admissions extra. | Check itinerary timing and every customer price/exclusion statement. | Rehearsals; each run | Not recorded |
@@ -80,14 +80,14 @@ A sourced input records the evidence date, not permanent validity. A recorded de
 
 | ID | Status | Assumption / current value | Validation / evidence needed | Review deadline | Actual result |
 | --- | --- | --- | --- | --- | --- |
-| A33 | V | SF minimum wage: $19.61/hour from July 1, 2026. [27] | Source checked September 14. Preserve the higher $40 planning allowance; employment costs require a separate calculation. | Before hiring; wage updates | Not recorded |
+| A33 | V | SF minimum wage: $19.61/hour from July 1, 2026. [27] | Source rechecked September 15. Preserve the higher $40 planning allowance; employment costs require a separate calculation. | Before hiring; wage updates | Not recorded |
 | A34 | V | Muni day pass: $5.70; regular Muni free for ages 18 and under. [01] | Source checked September 14. Confirm current fare and eligibility; do not require an unnecessary guest pass. | Before fare teaching | Not recorded |
-| A35 | V | Stripe domestic cards: 2.9% + $0.30 per successful transaction. [28] | Source checked September 14. International cards, conversion and other services can cost more; inspect statements. | Setup; monthly | Not recorded |
+| A35 | V | Stripe domestic cards: 2.9% + $0.30 per successful transaction. [28] | Rechecked September 15. International cards add 1.5%; conversion can add 1%. Inspect actual card mix and fees. | Setup; monthly | Not recorded |
 | A36 | V | Payment Links included in standard Payments pricing. [29] | Source checked September 14. Avoid assuming optional invoicing, custom domains or other products are free. | Before checkout selection | Not recorded |
 | A37 | V | Initial Stripe payout typically 7-14 days and can take longer. [30] | Check account-specific expected deposit dates; booking receipts do not equal available bank cash. | First payment; each payout | Not recorded |
 | A38 | V | Smallest 2026-27 SF registration tier: $55 + $4 state fee. [32] | Source checked September 14. Verify applicable tier and other license/name charges; not the total startup fee. | Registration | Not recorded |
 | A39 | V | First Year Free excludes home-based businesses. [33] | Source checked September 14. Check all eligibility criteria; no waiver is assumed in the budget. | Registration | Not recorded |
-| A40 | E | Competitor prices are advertised benchmarks checked September 9-14. [18-26] | They are not final checkout quotes. Confirm inclusions and conflicting prices before publishing comparisons. | Before reuse | Not recorded |
+| A40 | E | Benchmarks checked September 9-15; food/bike/Santa Fe rechecked Sep 15. [18-26] | They are not final checkout quotes. Confirm inclusions and conflicting prices before publishing comparisons. | Before reuse | Not recorded |
 
 ## Permissions and customer policies
 
@@ -148,7 +148,7 @@ A sourced input records the evidence date, not permanent validity. A recorded de
 | A73 | P | Reduce prep from 4.5 to 4 total hours per departure, preserving 3.5 guest hours. | Time-log target: 0.5 hour x 12 x $40 = $240 economic saving; add any new setup cost. | Weeks 3 and 6 | Not recorded |
 | A74 | P | Reduce admin from three to two hours/week. | Target saving: six hours x $40 = $240. Count selling, support and booking work honestly. | Weeks 3 and 6 | Not recorded |
 | A75 | P | Reduce materials from $2 to $0.50/guest. | At 48 guests target $72 saving; test quality and actual receipts. No achieved saving is recorded. | Weeks 3 and 6 | Not recorded |
-| A76 | P | Combined efficiency target $552; baseline surplus $558 could become $1,110. | Only with the same 48 guests, all three improvements and no offsetting costs. Actual results are unmeasured. | Week 6 | Not recorded |
+| A76 | P | Combined efficiency target $552; $149 pilot surplus $2,771.23 could become $3,323.23. | Only with the same 48 guests, all three improvements and no offsetting costs. Actual results are unmeasured. | Week 6 | Not recorded |
 | A77 | D | Brand: BUILDERS. BALLERS. & THE BAY.; fine pixel motion and sparse transit icons. | Review mobile legibility and reduced-motion behavior; keep visitor instructions clear. | Each design release | Not recorded |
 | A78 | E | Earlier sign/trailer kit $750; 18x24 sign and 24x72 banner artwork exist. | Defer hardware in lean pilot; quote outdoor system, storage and legal placement before purchase. | Before printing/purchase | Not recorded |
 | A79 | U | QR uses intended aisftour.com domain; production destination unverified. | Test DNS, HTTPS, anonymous access, selected offer and purchase on multiple phones before public printing. | Before public QR use | Not recorded |
@@ -162,7 +162,7 @@ All goal statuses: **Proposed / not measured**. Accountable role: owner/operator
 | --- | --- | --- | --- | --- | --- |
 | G01 - Ready for paid operation | All launch requirements evidenced; no unresolved release blocker. | Permit/registration, insurance, site access, customer terms, tax treatment and end-to-end checkout evidence. | Before first sale | Not measured | Proposed |
 | G02 - Rehearse the route | Two full B rehearsals; timings, alternatives and teaching checks recorded. | Dated route logs, actual walking/transit/coffee time and guide sign-off. | Before first paid departure | Not measured | Proposed |
-| G03 - Make the first sale | Four paid seats at the selected pilot price; $400 if $100 is adopted. | Booking/payment records and customer terms acceptance; exclude complimentary seats. | First confirmed departure | Not measured | Proposed |
+| G03 - Make the first sale | Four paid seats at the selected pilot price; $596 if $149 is adopted. | Booking/payment records and customer terms acceptance; exclude complimentary seats. | First confirmed departure | Not measured | Proposed |
 | G04 - Midpoint demand check | About 24 delivered paid guests across first six offered dates. | Guest ledger including empty/canceled dates; investigate weak demand rather than add routes. | End of week 3 | Not measured | Proposed |
 | G05 - Paid pilot attendance | At least 48; target 60-72 across all 12 offered dates. | Delivered paid attendance only; exclude comps, refunds and no-shows; retain all offered dates. | End of week 6 | Not measured | Proposed |
 | G06 - Independent demand | At least 80% of delivered paid guests outside friends/family. | Optional relationship/source flag in booking ledger; unknowns do not count as independent evidence. | Weeks 3 and 6 | Not measured | Proposed |
@@ -173,7 +173,7 @@ All goal statuses: **Proposed / not measured**. Accountable role: owner/operator
 | G11 - Protect paid owner time | Budget 4.5 hours/run, 3 admin hours/week and 16 setup hours; log all actual hours. | Timesheet: setup, preparation, guiding, returns and admin. Rebudget if actual time exceeds allowance. | Each run; weekly | Not measured | Proposed |
 | G12 - Affordable acquisition | Pilot cash marketing budget $180; test channels at <=$10 per paid guest. | Attribute spend and paid attendance by source; count owner time separately. Stretch: two repeatable sources. | Weekly; week 6 | Not measured | Proposed |
 | G13 - Operating profitability | Positive actual operating surplus; stronger expansion target >=20% margin. | Delivered sales less actual costs and all owner hours at $40. Reconcile reserve vs actual losses; avoid double counts. | Weeks 3 and 6 | Not measured | Proposed |
-| G14 - Recover startup investment | Recover actual initial setup and operating costs including owner time; ~64 guests in current model. | Recalculate break-even after quotes/time logs. The 64-guest figure is conditional, not a universal target. | End of pilot; next review | Not measured | Proposed |
+| G14 - Recover startup investment | Recover actual initial setup and operating costs including owner time; 43 guests mathematically, but 48 to run all 12 dates at minimum. | Recalculate break-even after quotes/time logs. Keep cost break-even separate from the four-guest departure rule. | End of pilot; next review | Not measured | Proposed |
 | G15 - Demonstrate cost savings | Test the $552 efficiency opportunity without reducing the guest experience. | Compare prep, admin and materials actuals to baseline; deduct any added setup/software costs. | Weeks 3 and 6 | Not measured | Proposed |
 | G16 - Resolve operating hazards | Record every incident/complaint and resolve critical issues before the next departure. | Incident log, action owner and closure evidence; zero incidents is not proof of safety. | Each run; before next | Not measured | Proposed |
 | G17 - Maintain refund liquidity | Available funds cover undelivered-booking refunds and obligations due before next reliable payout. | Cash, processor balance, payout date and liability reconciliation; check before owner draws. | Weekly; before draws | Not measured | Proposed |
@@ -200,9 +200,10 @@ All goal statuses: **Proposed / not measured**. Accountable role: owner/operator
 
 | Date | Entry | Status / impact |
 | --- | --- | --- |
-| September 14, 2026 | Consolidated assumptions and goal register created from the current business plan and discussion. | Documentation only. No actual pilot results or changed live prices recorded. |
+| September 14, 2026 | Initial 80 assumptions and 18 goals consolidated with a $100 pilot proposal. | Historical baseline; no measured results. |
+| September 15, 2026 | A02 pilot proposal $100 to $149; dependent financial outputs, G03 and G14 revised. See business plan pages 40-43 for price-test gates. | Recommendation only; $195 website price and closed sales unchanged. No actual results. |
 | Next review | Record assumption ID, old/new value, evidence, decision and affected document/model. | Pending |
 
 When an estimate changes, preserve its prior value in the log, update dependent calculations, and use the same selected price and terms in the website, checkout and collateral. Goals may be revised with a stated reason; do not retroactively redefine the sample to make a missed goal pass.
 
-Source keys [01]-[40] refer to the clickable reference list in the Full Business Plan PDF. External values in this register were checked in the September 8-14 research, with financial inputs and listed current commercial values checked September 14. Unresolved entries require actual operating evidence.
+Source keys [01]-[40] refer to the clickable reference list in the Full Business Plan PDF. External values in this register were checked in the September 8-14 research, with SF wage, Stripe rates and food/e-bike/Santa Fe benchmarks rechecked September 15. Other source dates remain as recorded. Unresolved entries require actual operating evidence.
