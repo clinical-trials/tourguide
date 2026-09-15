@@ -18,6 +18,8 @@ Includes the latest 31-page guide training PDF, 41-page full business plan, 15-s
 
 Download the [latest tour guide PDF](business/current/AI-SF-Tour-Guide-Training-and-Business-Plan.pdf), [full business plan PDF](business/current/AI-SF-Tour-Full-Business-Plan.pdf), or [15 steps to cashflow PDF](business/current/AI-SF-Tour-15-Steps-to-Cashflow.pdf). The guide includes the OpenAI/Anthropic comparison, a future Apple/Nintendo/World Union Square option with the World biometric-verification and sneaker story, the unconfirmed NVIDIA Mission Rock location and verified AMD/NVIDIA Santa Clara addresses as South Bay story references.
 
+Start with the [September 15 launch-readiness review and rehearsal sheet](business/current/AI-SF-Tour-Launch-Readiness.md) for the remaining decisions and evidence needed to sell the first departure.
+
 Supporting planning addenda include the [six-week paid pilot](business/current/AI-SF-Tour-Six-Week-Pilot-Plan.md) and [delivery costs and cost reduction](business/current/AI-SF-Tour-Costs-and-Cost-Reduction.md). They cover a proposed $100 Branch B pilot, a $3,000 starting-cash allowance, success benchmarks and savings targets. These are planning scenarios; the website's price and booking status have not changed.
 
 ## Tour branches

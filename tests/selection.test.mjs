@@ -22,6 +22,21 @@ test('checkout return restores trip choices without carrying consent or payment 
   assert.throws(() => booking.validateBooking(restored, new Date('2026-09-09T14:00:00Z')));
 });
 
+test('checkout redirects reject missing or ambiguous payment return origins', () => {
+  const selection = { date: '2026-09-19', part: 'B', guests: 2, returnToWharf: false };
+  for (const origin of [
+    undefined, '', 'not-a-url', 'http://example.com',
+    'https://user:password@example.com', 'https://example.com/book',
+    'https://example.com?campaign=one', 'https://example.com#book',
+  ]) {
+    assert.throws(() => booking.checkoutCancelUrl(origin, selection), `Accepted ${origin}`);
+  }
+  const url = new URL(booking.checkoutCancelUrl('https://EXAMPLE.com/', selection));
+  assert.equal(url.origin, 'https://example.com');
+  assert.equal(url.pathname, '/');
+  assert.equal(url.searchParams.get('part'), 'B');
+});
+
 test('selection links accept only supported branches, real dates and bounded quantities', () => {
   assert.deepEqual(booking.readBookingSelection('?part=A'), { part: 'A' });
   assert.deepEqual(booking.readBookingSelection('?part=C&date=2026-02-30&guests=9&return=true'), {});

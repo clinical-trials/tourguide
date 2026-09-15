@@ -1,11 +1,12 @@
 # AI SF Tour business and design files
 
-This collection contains 30 deliverables. The `current` folder contains the completed materials indexed below; `archive` retains earlier drafts and proofs for reference. File names and contents match the delivered originals. `SHA256SUMS` records their checksums.
+This collection contains 31 deliverables. The `current` folder contains the completed materials indexed below; `archive` retains earlier drafts and proofs for reference. File names and contents match the delivered originals. `SHA256SUMS` records their checksums.
 
 ## Current materials
 
 | Material | Download |
 | --- | --- |
+| Pilot launch readiness: verified setup status, owner decisions and Branch B rehearsal sheet | [Read on GitHub](current/AI-SF-Tour-Launch-Readiness.md) |
 | Full business plan: 41 pages covering the offer, pilot, economics, assumptions, goals and launch decisions | [PDF](current/AI-SF-Tour-Full-Business-Plan.pdf) |
 | Next 15 steps to cashflow: owners, dependencies, budgets and completion checks | [8-page PDF](current/AI-SF-Tour-15-Steps-to-Cashflow.pdf) |
 | Assumptions and goals: 80 recorded assumptions and 18 measurable goals | [Read on GitHub](current/AI-SF-Tour-Assumptions-and-Goals.md) |

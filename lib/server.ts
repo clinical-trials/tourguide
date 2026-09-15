@@ -4,12 +4,12 @@ import { validatePaidSession } from './stripe.mjs';
 import { CONFIRM_SQL } from './inventory.mjs';
 import { locateSession } from './recovery.mjs';
 import { chargesReady } from './charge-policy.mjs';
+import { configuredSiteOrigin } from './site-origin.mjs';
 export function settings() {
   return {
     stripeKey: env.STRIPE_SECRET_KEY || '',
     webhookSecret: env.STRIPE_WEBHOOK_SECRET || '',
-    siteUrl:
-      env.SITE_URL || 'https://ai-sf-tour.purple-badge-1405.chatgpt.site',
+    siteUrl: configuredSiteOrigin(env.SITE_URL),
     meeting: env.MEETING_POINT || '',
     contact: env.CONTACT_EMAIL || '',
     policy: env.CANCELLATION_POLICY || '',
@@ -20,6 +20,7 @@ export function ready() {
   const c = settings();
   return Boolean(
     c.enabled &&
+    c.siteUrl &&
     c.stripeKey &&
     c.webhookSecret &&
     c.meeting &&
