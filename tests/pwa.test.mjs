@@ -8,7 +8,7 @@ const script = readFileSync(
   'utf8',
 );
 
-function worker({ offline = false, missingGuide = false } = {}) {
+function worker({ offline = false, missingGuide = false, base = '/' } = {}) {
   const handlers = {};
   const added = [],
     deleted = [],
@@ -21,6 +21,7 @@ function worker({ offline = false, missingGuide = false } = {}) {
     Response,
     self: {
       location: { origin: 'https://aisftour.com' },
+      registration: { scope: `https://aisftour.com${base}` },
       addEventListener: (name, handler) => {
         handlers[name] = handler;
       },
@@ -37,7 +38,7 @@ function worker({ offline = false, missingGuide = false } = {}) {
       open: async () => ({
         add: async (path) => added.push(path),
         match: async (path) =>
-          !missingGuide && path === '/offline.html' ? guide : undefined,
+          !missingGuide && path === `${base}offline.html` ? guide : undefined,
       }),
       keys: async () => [
         'aisftour-offline-v0',
@@ -141,14 +142,37 @@ test('home-screen manifest points to real square icons and permits standalone la
   const manifest = JSON.parse(
     readFileSync(new URL('../public/manifest.webmanifest', import.meta.url)),
   );
-  assert.equal(manifest.start_url, '/');
-  assert.equal(manifest.scope, '/');
+  for (const base of [
+    'https://aisftour.com/',
+    'https://clinical-trials.github.io/tourguide/',
+  ]) {
+    assert.equal(new URL(manifest.start_url, base).href, base);
+    assert.equal(new URL(manifest.scope, base).href, base);
+    for (const shortcut of manifest.shortcuts)
+      assert.ok(new URL(shortcut.url, base).href.startsWith(base));
+    for (const icon of manifest.icons)
+      assert.ok(new URL(icon.src, base).href.startsWith(base));
+  }
   assert.equal(manifest.display, 'standalone');
   for (const icon of manifest.icons) {
-    const png = readFileSync(new URL(`../public${icon.src}`, import.meta.url));
+    const png = readFileSync(
+      new URL(`../public/${icon.src.replace(/^\//, '')}`, import.meta.url),
+    );
     assert.equal(png.toString('hex', 0, 8), '89504e470d0a1a0a');
     const [width, height] = icon.sizes.split('x').map(Number);
     assert.equal(png.readUInt32BE(16), width);
     assert.equal(png.readUInt32BE(20), height);
   }
+});
+
+test('project-site offline guide stays under its scope and ignores sibling apps and APIs', async () => {
+  const sw = worker({ offline: true, base: '/tourguide/' });
+  await sw.lifecycle('install');
+  assert.deepEqual(sw.added, ['/tourguide/offline.html']);
+  assert.equal(
+    await (await sw.fetch('/tourguide/?part=B#book')).text(),
+    'City essentials',
+  );
+  assert.equal(sw.fetch('/tourguide/api/availability'), undefined);
+  assert.equal(sw.fetch('/another-project/'), undefined);
 });

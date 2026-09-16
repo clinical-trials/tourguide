@@ -1,3 +1,4 @@
+import { publicPath } from '@/lib/site-platform.mjs';
 import {
   ArrowUpRight,
   ArrowRight,
@@ -28,7 +29,11 @@ export default function Home() {
         <span>37.7749° N / 122.4194° W</span>
       </div>
       <header className="header shell">
-        <a className="brand" href="/" aria-label="AI SF Tour home">
+        <a
+          className="brand"
+          href={publicPath('/')}
+          aria-label="AI SF Tour home"
+        >
           <span className="brand-mark">
             <PixelMark />
           </span>
@@ -50,7 +55,8 @@ export default function Home() {
             <div className="hero-story">
               <div className="hero-kicker">
                 <p className="eyebrow">
-                  <span className="live-dot" /> A CONTEMPORARY SAN FRANCISCO TOUR
+                  <span className="live-dot" /> A CONTEMPORARY SAN FRANCISCO
+                  TOUR
                 </p>
                 <CityMascot icon="bridge" priority />
               </div>
@@ -339,8 +345,8 @@ export default function Home() {
                     </a>
                     <small>
                       4001 Judah Street, Outer Sunset. A sunny-weekend pause
-                      during brunch hours, currently Saturday–Sunday,
-                      9:30 AM–2 PM. Drinks purchased separately.
+                      during brunch hours, currently Saturday–Sunday, 9:30 AM–2
+                      PM. Drinks purchased separately.
                     </small>
                   </div>
                 </li>
@@ -383,8 +389,8 @@ export default function Home() {
             </div>
           </article>
           <p className="route-note">
-            <MapPin size={17} /> Proposed routes, subject to a timed trial.
-            AI company stops are exterior storytelling; office visits are not
+            <MapPin size={17} /> Proposed routes, subject to a timed trial. AI
+            company stops are exterior storytelling; office visits are not
             included. Coffee stops depend on opening hours and service capacity.
           </p>
         </section>
@@ -512,7 +518,7 @@ export default function Home() {
       </main>
       <footer>
         <div className="shell footer-main">
-          <a className="brand" href="/">
+          <a className="brand" href={publicPath('/')}>
             AI SF TOUR <ArrowUpRight />
           </a>
           <p>Explore the city making the future.</p>
@@ -540,9 +546,9 @@ export default function Home() {
             </p>
           ))}
           <p>
-            Photos are cropped, resized and shown as looping GIFs with a pixel color
-            treatment. Each photo and its adaptations retain the license listed
-            above.
+            Photos are cropped, resized and shown as looping GIFs with a pixel
+            color treatment. Each photo and its adaptations retain the license
+            listed above.
           </p>
         </details>
       </footer>

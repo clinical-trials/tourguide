@@ -1,13 +1,17 @@
+import { publicPath } from '@/lib/site-platform.mjs';
 type CityMascotProps = {
   icon: 'bus' | 't-train' | 'bridge';
   priority?: boolean;
 };
 
-export default function CityMascot({ icon, priority = false }: CityMascotProps) {
+export default function CityMascot({
+  icon,
+  priority = false,
+}: CityMascotProps) {
   return (
     <img
       className={`city-mascot city-mascot-${icon}`}
-      src={`/mascots/${icon}.webp`}
+      src={publicPath(`/mascots/${icon}.webp`)}
       width={256}
       height={256}
       alt=""

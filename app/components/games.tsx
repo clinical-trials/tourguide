@@ -1,4 +1,5 @@
 'use client';
+import { gamesFor } from '@/lib/tour-api.mjs';
 import { useEffect, useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { sfDate } from '@/lib/booking.mjs';
@@ -24,12 +25,8 @@ export default function Games() {
     const c = new AbortController();
     setLoading(true);
     setError('');
-    fetch(`/api/giants?date=${date}`, { signal: c.signal })
-      .then(async (r) => {
-        const d = (await r.json()) as { games: Game[]; error?: string };
-        if (!r.ok) throw new Error(d.error);
-        setGames(d.games);
-      })
+    gamesFor(date, { signal: c.signal })
+      .then((data: Game[]) => setGames(data))
       .catch((e) => {
         if (e.name !== 'AbortError') setError(e.message);
       })

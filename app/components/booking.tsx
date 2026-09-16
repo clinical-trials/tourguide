@@ -1,4 +1,6 @@
 'use client';
+import { availabilityFor } from '@/lib/tour-api.mjs';
+import { STATIC_SITE } from '@/lib/site-platform.mjs';
 import { useEffect, useRef, useState } from 'react';
 import {
   ArrowUpRight,
@@ -115,12 +117,8 @@ export default function Booking() {
     const controller = new AbortController();
     setLoading(true);
     setAvailability(null);
-    fetch(`/api/availability?date=${date}`, { signal: controller.signal })
-      .then(async (r) => {
-        const data = (await r.json()) as Availability & { error?: string };
-        if (!r.ok) throw new Error(data.error);
-        setAvailability(data);
-      })
+    availabilityFor(date, { signal: controller.signal })
+      .then((data: Availability) => setAvailability(data))
       .catch((e) => {
         if (e.name !== 'AbortError')
           setError(e.message || 'Unable to load availability.');
@@ -165,6 +163,7 @@ export default function Booking() {
     year: 'numeric',
   });
   async function pay() {
+    if (STATIC_SITE || !availability?.enabled) return;
     setBusy(true);
     setError('');
     try {

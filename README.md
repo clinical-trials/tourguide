@@ -4,11 +4,11 @@ AI SF Tour — a contemporary San Francisco walking-and-Muni tour website.
 
 ## View the website
 
-**[Open the AI SF Tour website →](https://ai-sf-tour.yoyoyoyoyoyoyoyoyoyoyo.chatgpt.site/)**
+**[Open the AI SF Tour website →](https://clinical-trials.github.io/tourguide/)**
 
-This is the deployed, private review site. Open it while signed in with the account that owns the site. Other visitors do not currently have access, and ticket sales are not open yet.
+The public website is published to GitHub Pages from `main`; ongoing work is also kept on `tourguide`. It includes the animated photography, tour routes, mobile navigation, offline city guide, live Giants schedule and interactive date/price preview. Ticket sales are not open yet.
 
-This GitHub page contains the project files. Use the link above to view the working website. `localhost:3000` works only while running the project on your own computer; `aisftour.com` is the intended public domain and has not been connected here.
+GitHub Pages hosts static files and cannot run the Stripe or booking database APIs. This build clearly labels planning previews and disables checkout. The separate server build retains the backend for a future ticket-sales launch. `aisftour.com` is the intended custom domain and has not been connected here.
 
 ## Business plan, guide training and artwork
 
@@ -51,6 +51,19 @@ node --test tests/*.test.mjs
 ```
 
 Built with React, TypeScript, Vinext, Tailwind CSS and Cloudflare D1. The site includes a departure calendar, Stripe Checkout integration, verified booking confirmations, calendar downloads and a live Giants schedule. Its visual identity uses pixelated photography, shutter animation and an ink-and-acid-green palette.
+
+## GitHub Pages publishing
+
+The workflow in [`.github/workflows/pages.yml`](.github/workflows/pages.yml) tests both `tourguide` and `main`, and publishes the site when changes are pushed to `main`. To release, fast-forward `main` to the reviewed `tourguide` commit and push it.
+
+One-time repository setup: in **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source. The `github-pages` environment must allow deployments from `main`. The workflow can also deploy while the existing Pages source is the `main` branch; switching the source to GitHub Actions avoids the redundant default README build. If the first run happened before setup, rerun that workflow after enabling Pages.
+
+```sh
+npm run build:pages
+npm run preview:pages -- --host 127.0.0.1 --port 4173
+```
+
+Open `http://127.0.0.1:4173/tourguide/` to review the production static build. The build publishes only `dist-pages`; business documents, server code, database configuration and local environment files are not copied into the website. Assets and home-screen installation are scoped to `/tourguide/`.
 
 ## Launch status
 

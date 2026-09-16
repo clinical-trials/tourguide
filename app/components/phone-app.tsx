@@ -1,4 +1,5 @@
 'use client';
+import { publicPath, SITE_BASE } from '@/lib/site-platform.mjs';
 
 import { useEffect, useState, type MouseEvent } from 'react';
 import {
@@ -34,7 +35,7 @@ export default function PhoneApp() {
   function navigate(event: MouseEvent<HTMLAnchorElement>, section: string) {
     setOpen(false);
     if (
-      window.location.pathname !== '/' ||
+      window.location.pathname !== SITE_BASE ||
       event.metaKey ||
       event.ctrlKey ||
       event.shiftKey ||
@@ -67,7 +68,10 @@ export default function PhoneApp() {
     window.addEventListener('appinstalled', onInstalled);
     if ('serviceWorker' in navigator && window.isSecureContext) {
       navigator.serviceWorker
-        .register('/sw.js', { scope: '/', updateViaCache: 'none' })
+        .register(publicPath('/sw.js'), {
+          scope: SITE_BASE,
+          updateViaCache: 'none',
+        })
         .catch(() => {
           // The online site remains usable in browsers without service worker support.
         });
@@ -97,19 +101,25 @@ export default function PhoneApp() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <nav className="phone-navigation" aria-label="Phone navigation">
-        <a href="/#routes" onClick={(event) => navigate(event, 'routes')}>
+        <a
+          href={publicPath('/#routes')}
+          onClick={(event) => navigate(event, 'routes')}
+        >
           <Map size={21} aria-hidden="true" />
           <span>Routes</span>
         </a>
         <a
-          href="/#book"
+          href={publicPath('/#book')}
           className="phone-book"
           onClick={(event) => navigate(event, 'book')}
         >
           <CalendarDays size={21} aria-hidden="true" />
           <span>Book</span>
         </a>
-        <a href="/#muni" onClick={(event) => navigate(event, 'muni')}>
+        <a
+          href={publicPath('/#muni')}
+          onClick={(event) => navigate(event, 'muni')}
+        >
           <TramFront size={21} aria-hidden="true" />
           <span>Muni</span>
         </a>
@@ -127,13 +137,19 @@ export default function PhoneApp() {
         </SheetHeader>
         <div className="phone-sheet-body">
           <div className="phone-quick-links">
-            <a href="/#details" onClick={(event) => navigate(event, 'details')}>
+            <a
+              href={publicPath('/#details')}
+              onClick={(event) => navigate(event, 'details')}
+            >
               Good to know <ArrowUpRight size={19} />
             </a>
-            <a href="/#games" onClick={(event) => navigate(event, 'games')}>
+            <a
+              href={publicPath('/#games')}
+              onClick={(event) => navigate(event, 'games')}
+            >
               Game schedules <ArrowUpRight size={19} />
             </a>
-            <a href="/offline.html">
+            <a href={publicPath('/offline.html')}>
               Offline city guide <ArrowUpRight size={19} />
             </a>
           </div>

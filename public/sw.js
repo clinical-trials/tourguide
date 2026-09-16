@@ -1,5 +1,6 @@
 const OFFLINE_CACHE = 'aisftour-offline-v1';
-const OFFLINE_PAGE = '/offline.html';
+const SCOPE_PATH = new URL(self.registration.scope).pathname;
+const OFFLINE_PAGE = `${SCOPE_PATH}offline.html`;
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -33,7 +34,8 @@ self.addEventListener('fetch', (event) => {
     event.request.method !== 'GET' ||
     event.request.mode !== 'navigate' ||
     url.origin !== self.location.origin ||
-    url.pathname.startsWith('/api/')
+    !url.pathname.startsWith(SCOPE_PATH) ||
+    url.pathname.startsWith(`${SCOPE_PATH}api/`)
   )
     return;
 

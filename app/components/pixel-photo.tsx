@@ -1,4 +1,5 @@
 'use client';
+import { publicPath, publicSrcSet } from '@/lib/site-platform.mjs';
 
 import { useEffect, useRef, useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
@@ -30,12 +31,12 @@ function GifFrame({
     <picture>
       <source
         media="(max-width: 600px)"
-        srcSet={`/motion/${motionKey}-shader-360.gif`}
+        srcSet={publicPath(`/motion/${motionKey}-shader-360.gif`)}
       />
       <img
         className="photo-gif"
         data-ready={ready}
-        src={`/motion/${motionKey}-shader-640.gif`}
+        src={publicPath(`/motion/${motionKey}-shader-640.gif`)}
         alt=""
         aria-hidden="true"
         style={{ objectPosition: `50% ${focusY * 100}%` }}
@@ -98,12 +99,14 @@ export default function PixelPhoto({
         {!posterFailed && (
           <source
             media="(max-width: 600px)"
-            srcSet={`/motion/${motionKey}-shader-360-still.webp`}
+            srcSet={publicPath(`/motion/${motionKey}-shader-360-still.webp`)}
           />
         )}
         <img
-          src={posterFailed ? src : `/motion/${motionKey}-shader-640-still.webp`}
-          srcSet={posterFailed ? srcSet : undefined}
+          src={publicPath(
+            posterFailed ? src : `/motion/${motionKey}-shader-640-still.webp`,
+          )}
+          srcSet={posterFailed ? publicSrcSet(srcSet) : undefined}
           sizes="(min-width: 1024px) 45vw, 90vw"
           alt={alt}
           width={width}
