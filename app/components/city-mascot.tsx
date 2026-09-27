@@ -1,6 +1,6 @@
 import { publicPath } from '@/lib/site-platform.mjs';
 type CityMascotProps = {
-  icon: 'bus' | 't-train' | 'bridge';
+  icon: 'bus' | 't-train' | 'bridge' | 'painted-ladies' | 'sea-lion' | 'coit-tower';
   priority?: boolean;
 };
 

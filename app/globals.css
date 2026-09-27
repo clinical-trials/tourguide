@@ -1028,7 +1028,7 @@ footer {
 .hero-story {
   min-width: 0;
 }
-/* Three small city characters: decorative, with space kept clear for copy. */
+/* Small city characters stay in the layout, clear of text and touch targets. */
 .city-mascot {
   display: block;
   width: 3.5rem;
@@ -1079,6 +1079,46 @@ footer {
 }
 .muni-pass-note > div {
   min-width: 0;
+}
+.branch-title .city-mascot-painted-ladies {
+  width: 5rem;
+  height: 5rem;
+  transform: rotate(-4deg);
+}
+.details-kicker {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.details-kicker .eyebrow {
+  margin: 0;
+  padding: 0.35rem 0.55rem;
+  background: var(--lime);
+  color: var(--navy);
+}
+.details-kicker .city-mascot {
+  width: 4.5rem;
+  height: 4.5rem;
+  transform: rotate(4deg);
+}
+.sketch-underline {
+  position: relative;
+  display: inline-block;
+}
+.sketch-underline::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 -0.08em;
+  height: 0.12em;
+  border-bottom: 0.045em solid currentColor;
+  border-radius: 35% 15% 45% 30%;
+  transform: rotate(-2deg);
+  pointer-events: none;
+}
+.route-letter {
+  border-radius: 43% 55% 46% 52% / 51% 45% 55% 48%;
 }
 @media (min-width: 768px) {
   .city-mascot {
@@ -1452,8 +1492,32 @@ footer {
   pointer-events: none;
 }
 .city-note-inner {
+  flex-wrap: wrap;
+  gap: 1.5rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+.city-note-inner > div:last-child {
+  flex: 1 1 24rem;
+  min-width: 0;
+}
+.city-note-art {
+  flex: 0 0 auto;
+}
+.city-note-art .city-mascot {
+  width: 6rem;
+  height: 6rem;
+  transform: rotate(-5deg);
+}
+@media (min-width: 768px) {
+  .branch-title .city-mascot-painted-ladies {
+    width: 6rem;
+    height: 6rem;
+  }
+  .city-note-art .city-mascot {
+    width: 9rem;
+    height: 9rem;
+  }
 }
 .giant-arrow {
   width: 11rem;

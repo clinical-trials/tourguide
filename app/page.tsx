@@ -107,7 +107,7 @@ export default function Home() {
               <h2>
                 ONE CITY.
                 <br />
-                THREE BRANCHES.
+                THREE <span className="sketch-underline">BRANCHES.</span>
               </h2>
             </div>
             <p>
@@ -122,11 +122,14 @@ export default function Home() {
                 <span className="route-letter">A</span>
                 <span className="eyebrow">BRANCH A / 8:30 AM–12:00 PM</span>
               </div>
-              <h3>
-                OLD SOUL.
-                <br />
-                NEW INTELLIGENCE.
-              </h3>
+              <div className="branch-title">
+                <h3>
+                  OLD SOUL.
+                  <br />
+                  NEW INTELLIGENCE.
+                </h3>
+                <CityMascot icon="painted-ladies" />
+              </div>
               <p>
                 From North Beach’s Italian roots to Chinatown’s civic story,
                 then south into the conversation around AI.
@@ -396,15 +399,15 @@ export default function Home() {
         </section>
         <section className="city-note">
           <div className="shell city-note-inner">
-            <span className="giant-arrow" aria-hidden="true">
-              <PixelMark />
-            </span>
+            <div className="city-note-art" aria-hidden="true">
+              <CityMascot icon="coit-tower" />
+            </div>
             <div>
-              <p className="eyebrow">THE THROUGH-LINE</p>
+              <p className="eyebrow">WHY OUR TOUR IS THE BEST</p>
               <h2>
                 BIG IDEAS DON’T
                 <br />
-                HAPPEN IN A VACUUM.
+                HAPPEN IN A <span className="sketch-underline">VACUUM.</span>
               </h2>
               <p>
                 Steve Jobs. NVIDIA and AMD. Founders, researchers, and the
@@ -420,7 +423,10 @@ export default function Home() {
         </section>
         <section id="details" className="section shell details-section">
           <div>
-            <p className="eyebrow">02 / BEFORE YOU GO</p>
+            <div className="details-kicker">
+              <p className="eyebrow">02 / BEFORE YOU GO</p>
+              <CityMascot icon="sea-lion" />
+            </div>
             <h2>
               A LITTLE
               <br />
