@@ -528,7 +528,7 @@ export default function Home() {
             AI SF TOUR <ArrowUpRight />
           </a>
           <p>Explore the city making the future.</p>
-          <span>aisftour.com</span>
+          <span>sfaitour.com</span>
         </div>
         <div className="shell footer-fine">
           <span>© 2026 AI SF Tour · Independent tour concept</span>

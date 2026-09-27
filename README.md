@@ -10,7 +10,7 @@ The public website is published to GitHub Pages from `main`; ongoing work is als
 
 The [September 27 basketball rollout](business/current/AI-SF-Tour-Basketball-Rollout.md) plans 38 Dogpatch-to-Chase Center departures around published Warriors home games through April 11, 2027, excluding Mondays. The website includes a month selector and tentative ICS/CSV downloads; it is a dated planning snapshot, not a live schedule or bookable inventory. Valkyries dates depend on confirmed home games. Baseball remains a seasonal option. After updating the verified NBA snapshot, run `node scripts/build-game-day-calendar.mjs` to regenerate the downloads.
 
-GitHub Pages hosts static files and cannot run the Stripe or booking database APIs. This build clearly labels planning previews and disables checkout. The separate server build retains the backend for a future ticket-sales launch. `aisftour.com` is the intended custom domain and has not been connected here.
+GitHub Pages hosts static files and cannot run the Stripe or booking database APIs. This build clearly labels planning previews and disables checkout. The separate server build retains the backend for a future ticket-sales launch. `sfaitour.com` is the intended custom domain, replacing the earlier `aisftour.com` address, and has not been connected here.
 
 ## Business plan, guide training and artwork
 
@@ -69,7 +69,7 @@ Open `http://127.0.0.1:4173/tourguide/` to review the production static build. T
 
 ## Launch status
 
-This is a prelaunch website. Ticket sales remain disabled until Stripe, meeting details, customer contact information and booking policies are configured and validated. Branch C is a proposed special and is not available in checkout. `aisftour.com` is the intended public domain; this repository does not configure its DNS.
+This is a prelaunch website. Ticket sales remain disabled until Stripe, meeting details, customer contact information and booking policies are configured and validated. Branch C is a proposed special and is not available in checkout. `sfaitour.com` is the intended public domain; this repository does not configure its DNS. The September 27 domain check returned NXDOMAIN for both `sfaitour.com` and `aisftour.com`; domain ownership has not been established. Existing printed PDFs and QR artwork still use the earlier address and need revision before public printing. See [domain setup notes](docs/domain-change.md).
 
 Secrets belong in local or hosted environment settings. Do not commit real environment files or Stripe keys. The `.openai/hosting.json` file identifies the existing Sites project; changing the GitHub repository does not redeploy that site.
 

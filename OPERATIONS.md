@@ -1,6 +1,6 @@
 # AI SF Tour booking operation
 
-This site is a private prelaunch review. It does not accept payment until all required settings are configured. The domain aisftour.com is the intended public domain; ownership/DNS have not been verified.
+This site is a prelaunch review. It does not accept payment until all required settings are configured. The intended public domain is sfaitour.com, replacing the earlier aisftour.com address. Domain ownership and connection remain unverified; see [domain setup notes](docs/domain-change.md).
 
 ## Offer assumptions
 
