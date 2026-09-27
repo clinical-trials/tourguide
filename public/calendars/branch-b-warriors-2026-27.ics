@@ -1,0 +1,732 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AI SF TOUR//Branch B Planning//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI SF TOUR - proposed Warriors tours
+BEGIN:VEVENT
+UID:warriors-20261006-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261006T213000Z
+DTEND:20261007T010000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Lakers
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Lakers\; Preseason.\nGame tipoff: 7:00 PM Pacific. Finish at Ch
+ ase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dogpatch
+ \; exact meeting point pending confirmation.\nGame admission\, food\, coff
+ ee and Muni fares are separate purchases.\nNo tours on Mondays. Holiday st
+ affing\, route access and guide availability must be confirmed.\nSchedule 
+ checked 2026-09-27. Times may change\; recheck the official schedule and d
+ ownload a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261010-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261010T200000Z
+DTEND:20261010T233000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Kings
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Kings\; Preseason.\nGame tipoff: 5:30 PM Pacific. Finish at Cha
+ se Center 60 minutes before tipoff.\nMeet near Third and 20th in Dogpatch\
+ ; exact meeting point pending confirmation.\nGame admission\, food\, coffe
+ e and Muni fares are separate purchases.\nNo tours on Mondays. Holiday sta
+ ffing\, route access and guide availability must be confirmed.\nSchedule c
+ hecked 2026-09-27. Times may change\; recheck the official schedule and do
+ wnload a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261016-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261016T213000Z
+DTEND:20261017T010000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Trail Blazers
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Trail Blazers\; Preseason.\nGame tipoff: 7:00 PM Pacific. Finis
+ h at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in D
+ ogpatch\; exact meeting point pending confirmation.\nGame admission\, food
+ \, coffee and Muni fares are separate purchases.\nNo tours on Mondays. Hol
+ iday staffing\, route access and guide availability must be confirmed.\nSc
+ hedule checked 2026-09-27. Times may change\; recheck the official schedul
+ e and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261023-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261023T213000Z
+DTEND:20261024T010000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Grizzlies
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Grizzlies\; Regular season.\nGame tipoff: 7:00 PM Pacific. Fini
+ sh at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in 
+ Dogpatch\; exact meeting point pending confirmation.\nGame admission\, foo
+ d\, coffee and Muni fares are separate purchases.\nNo tours on Mondays. Ho
+ liday staffing\, route access and guide availability must be confirmed.\nS
+ chedule checked 2026-09-27. Times may change\; recheck the official schedu
+ le and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261030-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261030T213000Z
+DTEND:20261031T010000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Lakers
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Lakers\; NBA Cup group game.\nGame tipoff: 7:00 PM Pacific. Fin
+ ish at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in
+  Dogpatch\; exact meeting point pending confirmation.\nGame admission\, fo
+ od\, coffee and Muni fares are separate purchases.\nNo tours on Mondays. H
+ oliday staffing\, route access and guide availability must be confirmed.\n
+ Schedule checked 2026-09-27. Times may change\; recheck the official sched
+ ule and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261101-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261101T210000Z
+DTEND:20261102T003000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Clippers
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Clippers\; Regular season.\nGame tipoff: 5:30 PM Pacific. Finis
+ h at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in D
+ ogpatch\; exact meeting point pending confirmation.\nGame admission\, food
+ \, coffee and Muni fares are separate purchases.\nNo tours on Mondays. Hol
+ iday staffing\, route access and guide availability must be confirmed.\nSc
+ hedule checked 2026-09-27. Times may change\; recheck the official schedul
+ e and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261105-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261105T223000Z
+DTEND:20261106T020000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Heat
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Heat\; Regular season.\nGame tipoff: 7:00 PM Pacific. Finish at
+  Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dogpa
+ tch\; exact meeting point pending confirmation.\nGame admission\, food\, c
+ offee and Muni fares are separate purchases.\nNo tours on Mondays. Holiday
+  staffing\, route access and guide availability must be confirmed.\nSchedu
+ le checked 2026-09-27. Times may change\; recheck the official schedule an
+ d download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261107-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261107T210000Z
+DTEND:20261108T003000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Magic
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Magic\; Regular season.\nGame tipoff: 5:30 PM Pacific. Finish a
+ t Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dogp
+ atch\; exact meeting point pending confirmation.\nGame admission\, food\, 
+ coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holida
+ y staffing\, route access and guide availability must be confirmed.\nSched
+ ule checked 2026-09-27. Times may change\; recheck the official schedule a
+ nd download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261122-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261122T210000Z
+DTEND:20261123T003000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Celtics
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Celtics\; Regular season.\nGame tipoff: 5:30 PM Pacific. Finish
+  at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Do
+ gpatch\; exact meeting point pending confirmation.\nGame admission\, food\
+ , coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holi
+ day staffing\, route access and guide availability must be confirmed.\nSch
+ edule checked 2026-09-27. Times may change\; recheck the official schedule
+  and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261125-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261125T223000Z
+DTEND:20261126T020000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Kings
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Kings\; NBA Cup group game.\nGame tipoff: 7:00 PM Pacific. Fini
+ sh at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in 
+ Dogpatch\; exact meeting point pending confirmation.\nGame admission\, foo
+ d\, coffee and Muni fares are separate purchases.\nNo tours on Mondays. Ho
+ liday staffing\, route access and guide availability must be confirmed.\nS
+ chedule checked 2026-09-27. Times may change\; recheck the official schedu
+ le and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261129-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261129T210000Z
+DTEND:20261130T003000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Clippers
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Clippers\; Regular season.\nGame tipoff: 5:30 PM Pacific. Finis
+ h at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in D
+ ogpatch\; exact meeting point pending confirmation.\nGame admission\, food
+ \, coffee and Muni fares are separate purchases.\nNo tours on Mondays. Hol
+ iday staffing\, route access and guide availability must be confirmed.\nSc
+ hedule checked 2026-09-27. Times may change\; recheck the official schedul
+ e and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261201-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261201T233000Z
+DTEND:20261202T030000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Jazz
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Jazz\; Regular season.\nGame tipoff: 8:00 PM Pacific. Finish at
+  Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dogpa
+ tch\; exact meeting point pending confirmation.\nGame admission\, food\, c
+ offee and Muni fares are separate purchases.\nNo tours on Mondays. Holiday
+  staffing\, route access and guide availability must be confirmed.\nSchedu
+ le checked 2026-09-27. Times may change\; recheck the official schedule an
+ d download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261222-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261222T230000Z
+DTEND:20261223T023000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Mavericks
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Mavericks\; Regular season.\nGame tipoff: 7:30 PM Pacific. Fini
+ sh at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in 
+ Dogpatch\; exact meeting point pending confirmation.\nGame admission\, foo
+ d\, coffee and Muni fares are separate purchases.\nNo tours on Mondays. Ho
+ liday staffing\, route access and guide availability must be confirmed.\nS
+ chedule checked 2026-09-27. Times may change\; recheck the official schedu
+ le and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261225-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261225T230000Z
+DTEND:20261226T023000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Nuggets
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Nuggets\; Regular season.\nGame tipoff: 7:30 PM Pacific. Finish
+  at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Do
+ gpatch\; exact meeting point pending confirmation.\nGame admission\, food\
+ , coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holi
+ day staffing\, route access and guide availability must be confirmed.\nSch
+ edule checked 2026-09-27. Times may change\; recheck the official schedule
+  and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261227-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261227T210000Z
+DTEND:20261228T003000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Timberwolves
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Timberwolves\; Regular season.\nGame tipoff: 5:30 PM Pacific. F
+ inish at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th 
+ in Dogpatch\; exact meeting point pending confirmation.\nGame admission\, 
+ food\, coffee and Muni fares are separate purchases.\nNo tours on Mondays.
+  Holiday staffing\, route access and guide availability must be confirmed.
+ \nSchedule checked 2026-09-27. Times may change\; recheck the official sch
+ edule and download a fresh calendar.\nhttps://www.nba.com/warriors/schedul
+ e
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20261230-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20261230T223000Z
+DTEND:20261231T020000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Rockets
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Rockets\; Regular season.\nGame tipoff: 7:00 PM Pacific. Finish
+  at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Do
+ gpatch\; exact meeting point pending confirmation.\nGame admission\, food\
+ , coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holi
+ day staffing\, route access and guide availability must be confirmed.\nSch
+ edule checked 2026-09-27. Times may change\; recheck the official schedule
+  and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270102-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270102T210000Z
+DTEND:20270103T003000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Nets
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Nets\; Regular season.\nGame tipoff: 5:30 PM Pacific. Finish at
+  Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dogpa
+ tch\; exact meeting point pending confirmation.\nGame admission\, food\, c
+ offee and Muni fares are separate purchases.\nNo tours on Mondays. Holiday
+  staffing\, route access and guide availability must be confirmed.\nSchedu
+ le checked 2026-09-27. Times may change\; recheck the official schedule an
+ d download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270106-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270106T223000Z
+DTEND:20270107T020000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Knicks
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Knicks\; Regular season.\nGame tipoff: 7:00 PM Pacific. Finish 
+ at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dog
+ patch\; exact meeting point pending confirmation.\nGame admission\, food\,
+  coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holid
+ ay staffing\, route access and guide availability must be confirmed.\nSche
+ dule checked 2026-09-27. Times may change\; recheck the official schedule 
+ and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270107-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270107T223000Z
+DTEND:20270108T020000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Pistons
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Pistons\; Regular season.\nGame tipoff: 7:00 PM Pacific. Finish
+  at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Do
+ gpatch\; exact meeting point pending confirmation.\nGame admission\, food\
+ , coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holi
+ day staffing\, route access and guide availability must be confirmed.\nSch
+ edule checked 2026-09-27. Times may change\; recheck the official schedule
+  and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270109-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270109T210000Z
+DTEND:20270110T003000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Bulls
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Bulls\; Regular season.\nGame tipoff: 5:30 PM Pacific. Finish a
+ t Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dogp
+ atch\; exact meeting point pending confirmation.\nGame admission\, food\, 
+ coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holida
+ y staffing\, route access and guide availability must be confirmed.\nSched
+ ule checked 2026-09-27. Times may change\; recheck the official schedule a
+ nd download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270112-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270112T233000Z
+DTEND:20270113T030000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Kings
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Kings\; Regular season.\nGame tipoff: 8:00 PM Pacific. Finish a
+ t Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dogp
+ atch\; exact meeting point pending confirmation.\nGame admission\, food\, 
+ coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holida
+ y staffing\, route access and guide availability must be confirmed.\nSched
+ ule checked 2026-09-27. Times may change\; recheck the official schedule a
+ nd download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270113-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270113T223000Z
+DTEND:20270114T020000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Hornets
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Hornets\; Regular season.\nGame tipoff: 7:00 PM Pacific. Finish
+  at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Do
+ gpatch\; exact meeting point pending confirmation.\nGame admission\, food\
+ , coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holi
+ day staffing\, route access and guide availability must be confirmed.\nSch
+ edule checked 2026-09-27. Times may change\; recheck the official schedule
+  and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270121-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270121T223000Z
+DTEND:20270122T020000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Lakers
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Lakers\; Regular season.\nGame tipoff: 7:00 PM Pacific. Finish 
+ at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dog
+ patch\; exact meeting point pending confirmation.\nGame admission\, food\,
+  coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holid
+ ay staffing\, route access and guide availability must be confirmed.\nSche
+ dule checked 2026-09-27. Times may change\; recheck the official schedule 
+ and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270122-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270122T223000Z
+DTEND:20270123T020000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Bucks
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Bucks\; Regular season.\nGame tipoff: 7:00 PM Pacific. Finish a
+ t Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dogp
+ atch\; exact meeting point pending confirmation.\nGame admission\, food\, 
+ coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holida
+ y staffing\, route access and guide availability must be confirmed.\nSched
+ ule checked 2026-09-27. Times may change\; recheck the official schedule a
+ nd download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270124-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270124T210000Z
+DTEND:20270125T003000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Thunder
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Thunder\; Regular season.\nGame tipoff: 5:30 PM Pacific. Finish
+  at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Do
+ gpatch\; exact meeting point pending confirmation.\nGame admission\, food\
+ , coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holi
+ day staffing\, route access and guide availability must be confirmed.\nSch
+ edule checked 2026-09-27. Times may change\; recheck the official schedule
+  and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270130-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270130T180000Z
+DTEND:20270130T213000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Spurs
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Spurs\; Regular season.\nGame tipoff: 2:30 PM Pacific. Finish a
+ t Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dogp
+ atch\; exact meeting point pending confirmation.\nGame admission\, food\, 
+ coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holida
+ y staffing\, route access and guide availability must be confirmed.\nSched
+ ule checked 2026-09-27. Times may change\; recheck the official schedule a
+ nd download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270217-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270217T223000Z
+DTEND:20270218T020000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Pelicans
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Pelicans\; Regular season.\nGame tipoff: 7:00 PM Pacific. Finis
+ h at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in D
+ ogpatch\; exact meeting point pending confirmation.\nGame admission\, food
+ \, coffee and Muni fares are separate purchases.\nNo tours on Mondays. Hol
+ iday staffing\, route access and guide availability must be confirmed.\nSc
+ hedule checked 2026-09-27. Times may change\; recheck the official schedul
+ e and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270225-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270225T223000Z
+DTEND:20270226T020000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Mavericks
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Mavericks\; Regular season.\nGame tipoff: 7:00 PM Pacific. Fini
+ sh at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in 
+ Dogpatch\; exact meeting point pending confirmation.\nGame admission\, foo
+ d\, coffee and Muni fares are separate purchases.\nNo tours on Mondays. Ho
+ liday staffing\, route access and guide availability must be confirmed.\nS
+ chedule checked 2026-09-27. Times may change\; recheck the official schedu
+ le and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270304-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270304T223000Z
+DTEND:20270305T020000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Wizards
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Wizards\; Regular season.\nGame tipoff: 7:00 PM Pacific. Finish
+  at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Do
+ gpatch\; exact meeting point pending confirmation.\nGame admission\, food\
+ , coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holi
+ day staffing\, route access and guide availability must be confirmed.\nSch
+ edule checked 2026-09-27. Times may change\; recheck the official schedule
+  and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270307-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270307T223000Z
+DTEND:20270308T020000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Rockets
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Rockets\; Regular season.\nGame tipoff: 7:00 PM Pacific. Finish
+  at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Do
+ gpatch\; exact meeting point pending confirmation.\nGame admission\, food\
+ , coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holi
+ day staffing\, route access and guide availability must be confirmed.\nSch
+ edule checked 2026-09-27. Times may change\; recheck the official schedule
+  and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270309-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270309T233000Z
+DTEND:20270310T030000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Trail Blazers
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Trail Blazers\; Regular season.\nGame tipoff: 8:00 PM Pacific. 
+ Finish at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th
+  in Dogpatch\; exact meeting point pending confirmation.\nGame admission\,
+  food\, coffee and Muni fares are separate purchases.\nNo tours on Mondays
+ . Holiday staffing\, route access and guide availability must be confirmed
+ .\nSchedule checked 2026-09-27. Times may change\; recheck the official sc
+ hedule and download a fresh calendar.\nhttps://www.nba.com/warriors/schedu
+ le
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270316-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270316T213000Z
+DTEND:20270317T010000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Cavaliers
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Cavaliers\; Regular season.\nGame tipoff: 7:00 PM Pacific. Fini
+ sh at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in 
+ Dogpatch\; exact meeting point pending confirmation.\nGame admission\, foo
+ d\, coffee and Muni fares are separate purchases.\nNo tours on Mondays. Ho
+ liday staffing\, route access and guide availability must be confirmed.\nS
+ chedule checked 2026-09-27. Times may change\; recheck the official schedu
+ le and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270317-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270317T213000Z
+DTEND:20270318T010000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Grizzlies
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Grizzlies\; Regular season.\nGame tipoff: 7:00 PM Pacific. Fini
+ sh at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in 
+ Dogpatch\; exact meeting point pending confirmation.\nGame admission\, foo
+ d\, coffee and Muni fares are separate purchases.\nNo tours on Mondays. Ho
+ liday staffing\, route access and guide availability must be confirmed.\nS
+ chedule checked 2026-09-27. Times may change\; recheck the official schedu
+ le and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270319-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270319T213000Z
+DTEND:20270320T010000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Trail Blazers
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Trail Blazers\; Regular season.\nGame tipoff: 7:00 PM Pacific. 
+ Finish at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th
+  in Dogpatch\; exact meeting point pending confirmation.\nGame admission\,
+  food\, coffee and Muni fares are separate purchases.\nNo tours on Mondays
+ . Holiday staffing\, route access and guide availability must be confirmed
+ .\nSchedule checked 2026-09-27. Times may change\; recheck the official sc
+ hedule and download a fresh calendar.\nhttps://www.nba.com/warriors/schedu
+ le
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270324-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270324T213000Z
+DTEND:20270325T010000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. 76ers
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. 76ers\; Regular season.\nGame tipoff: 7:00 PM Pacific. Finish a
+ t Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dogp
+ atch\; exact meeting point pending confirmation.\nGame admission\, food\, 
+ coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holida
+ y staffing\, route access and guide availability must be confirmed.\nSched
+ ule checked 2026-09-27. Times may change\; recheck the official schedule a
+ nd download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270325-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270325T213000Z
+DTEND:20270326T010000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Raptors
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Raptors\; Regular season.\nGame tipoff: 7:00 PM Pacific. Finish
+  at Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Do
+ gpatch\; exact meeting point pending confirmation.\nGame admission\, food\
+ , coffee and Muni fares are separate purchases.\nNo tours on Mondays. Holi
+ day staffing\, route access and guide availability must be confirmed.\nSch
+ edule checked 2026-09-27. Times may change\; recheck the official schedule
+  and download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270406-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270406T223000Z
+DTEND:20270407T020000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Suns
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Suns\; Regular season.\nGame tipoff: 8:00 PM Pacific. Finish at
+  Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dogpa
+ tch\; exact meeting point pending confirmation.\nGame admission\, food\, c
+ offee and Muni fares are separate purchases.\nNo tours on Mondays. Holiday
+  staffing\, route access and guide availability must be confirmed.\nSchedu
+ le checked 2026-09-27. Times may change\; recheck the official schedule an
+ d download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+BEGIN:VEVENT
+UID:warriors-20270411-branch-b@aisftour.com
+DTSTAMP:20260927T000000Z
+DTSTART:20270411T200000Z
+DTEND:20270411T233000Z
+SUMMARY:PROPOSED Branch B tour - Warriors vs. Jazz
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+LOCATION:Dogpatch near Third & 20th\, San Francisco (meeting point TBD)
+DESCRIPTION:PROPOSED TOUR ONLY - NOT A RESERVATION. Sales are not open.\nWa
+ rriors vs. Jazz\; Regular season.\nGame tipoff: 5:30 PM Pacific. Finish at
+  Chase Center 60 minutes before tipoff.\nMeet near Third and 20th in Dogpa
+ tch\; exact meeting point pending confirmation.\nGame admission\, food\, c
+ offee and Muni fares are separate purchases.\nNo tours on Mondays. Holiday
+  staffing\, route access and guide availability must be confirmed.\nSchedu
+ le checked 2026-09-27. Times may change\; recheck the official schedule an
+ d download a fresh calendar.\nhttps://www.nba.com/warriors/schedule
+URL:https://clinical-trials.github.io/tourguide/#games
+END:VEVENT
+END:VCALENDAR
