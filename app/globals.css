@@ -852,6 +852,56 @@ footer {
 .basketball-schedules {
   margin-top: 1.75rem;
 }
+.basketball-rollout {
+  align-items: start;
+}
+.basketball-rollout > div:first-child > p + p {
+  margin-top: 1rem;
+}
+.game-day-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+.game-day-list > li,
+.valkyries-rollout {
+  border-top: 1px solid #c3cbc945;
+  padding-top: 1.25rem;
+  margin-top: 1.25rem;
+}
+.game-day-date {
+  font-size: 0.875rem;
+  color: #c3cbc9;
+  margin: 0 0 0.5rem;
+}
+.basketball-rollout .scoreboard h3 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  overflow-wrap: anywhere;
+}
+.game-day-times {
+  margin: 1rem 0 0.5rem;
+}
+.game-day-times > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  margin-top: 0.35rem;
+  font-size: 0.875rem;
+}
+.game-day-times dt {
+  color: #c3cbc9;
+}
+.game-day-times dd {
+  margin: 0;
+  color: var(--lime);
+  font-weight: 600;
+}
+.valkyries-rollout > p:not(.score-eyebrow) {
+  margin: 1rem 0 0.5rem;
+  font-size: 0.9375rem;
+  color: #c3cbc9;
+}
 .game-disclaimer {
   margin-top: 1rem;
   max-width: 27rem;

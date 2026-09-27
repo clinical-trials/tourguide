@@ -1,164 +1,96 @@
 'use client';
-import { gamesFor } from '@/lib/tour-api.mjs';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
-import { sfDate } from '@/lib/booking.mjs';
-type Game = {
-  id: number;
-  date: string;
-  start: string;
-  away: string;
-  home: string;
-  isHome: boolean;
-  venue: string;
-  status: string;
-  timeTBD: boolean;
-  homeScore?: number;
-  awayScore?: number;
-};
+import {
+  rolloutCandidates,
+  SCHEDULE_CHECKED,
+  WARRIORS_SCHEDULE,
+  VALKYRIES_SCHEDULE,
+} from '@/lib/basketball-rollout.mjs';
+
+const time = (date: Date) => date.toLocaleTimeString('en-US', {
+  timeZone: 'America/Los_Angeles', hour: 'numeric', minute: '2-digit',
+});
+const day = (date: Date) => date.toLocaleDateString('en-US', {
+  timeZone: 'America/Los_Angeles', weekday: 'short', month: 'short', day: 'numeric',
+  year: 'numeric',
+});
+
 export default function Games() {
-  const [date, setDate] = useState(sfDate);
-  const [games, setGames] = useState<Game[]>([]);
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    const c = new AbortController();
-    setLoading(true);
-    setError('');
-    gamesFor(date, { signal: c.signal })
-      .then((data: Game[]) => setGames(data))
-      .catch((e) => {
-        if (e.name !== 'AbortError') setError(e.message);
-      })
-      .finally(() => {
-        if (!c.signal.aborted) setLoading(false);
-      });
-    return () => c.abort();
-  }, [date]);
-  const today = games.filter((g) => g.date === date),
-    upcoming = games.filter((g) => g.date > date && g.isHome).slice(0, 2);
-  const format = (g: Game) =>
-    g.timeTBD
-      ? 'Time TBA'
-      : new Date(g.start).toLocaleTimeString('en-US', {
-          timeZone: 'America/Los_Angeles',
-          hour: 'numeric',
-          minute: '2-digit',
-        });
+  const [now] = useState(() => new Date());
+  const candidates = rolloutCandidates(now);
   return (
-    <div className="games-card">
+    <div className="games-card basketball-rollout">
       <div>
-        <p className="eyebrow">EXTRA INNINGS / ORACLE PARK</p>
-        <h2>MAKE A DAY OF IT.</h2>
-        <p>Finish Branch B near the ballpark, then follow the Giants.</p>
-        <label className="schedule-date">
-          Game day{' '}
-          <input
-            type="date"
-            value={date}
-            onChange={(e) => {
-              if (e.target.value) setDate(e.target.value);
-            }}
-          />
-        </label>
-        <a
-          className="text-link"
-          href="https://www.mlb.com/giants/schedule"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Official Giants schedule <ArrowUpRight size={16} />
-        </a>
+        <p className="eyebrow">GAME DAY / CHASE CENTER</p>
+        <h2>CITY FIRST.<br />COURTSIDE NEXT.</h2>
+        <p>
+          Warriors. Valkyries. A different way to do game day. Our proposed
+          Branch B Game Day Edition starts in Dogpatch and finishes at Chase
+          Center, one hour before tipoff.
+        </p>
+        <p>
+          Explore the neighborhood, the waterfront, and the AI story with your
+          guide, then head to the game. Allow 3½ hours for the tour.
+        </p>
         <div className="basketball-schedules">
-          <p className="eyebrow">COURTSIDE / CHASE CENTER</p>
-          <p>
-            More of a basketball fan? Catch the Warriors or Valkyries at Chase
-            Center. Check their home games when planning your day.
-          </p>
-          <a
-            className="text-link"
-            href="https://www.nba.com/warriors/schedule"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a className="text-link" href={WARRIORS_SCHEDULE} target="_blank" rel="noreferrer">
             Official Warriors schedule <ArrowUpRight size={16} />
           </a>
-          <a
-            className="text-link"
-            href="https://valkyries.wnba.com/schedule"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a className="text-link" href={VALKYRIES_SCHEDULE} target="_blank" rel="noreferrer">
             Official Valkyries schedule <ArrowUpRight size={16} />
           </a>
         </div>
         <p className="small game-disclaimer">
-          Game tickets sold separately. Times shown in San Francisco time and
-          subject to change.
+          Game-day departures are proposed and not yet bookable. Game tickets,
+          coffee, food, and Muni fares are purchased separately. All times are
+          Pacific and subject to change. No tours on Mondays.
+        </p>
+        <p className="small game-disclaimer">
+          Baseball returns as a seasonal option.{' '}
+          <a href="https://www.mlb.com/giants/schedule" target="_blank" rel="noreferrer">
+            Check the Giants schedule.
+          </a>
         </p>
       </div>
-      <div className="scoreboard" aria-live="polite">
-        {loading ? (
-          <p>Checking the Giants schedule…</p>
-        ) : error ? (
-          <p>{error}</p>
+      <div className="scoreboard">
+        <p className="score-eyebrow">PROPOSED WARRIORS DEPARTURES</p>
+        <p className="small schedule-checked">
+          Selected home games · checked{' '}
+          <time dateTime={SCHEDULE_CHECKED}>September 27, 2026</time>.
+          Check the official schedule for changes.
+        </p>
+        {candidates.length ? (
+          <ul className="game-day-list">
+            {candidates.map((game) => (
+              <li key={game.id}>
+                <p className="game-day-date">{day(game.start)} · {game.phase}</p>
+                <h3>{game.team} vs. {game.opponent}</h3>
+                <dl className="game-day-times">
+                  <div><dt>Proposed tour</dt><dd>{time(game.start)}–{time(game.end)}</dd></div>
+                  <div><dt>Tipoff</dt><dd>{time(new Date(game.tipoff))}</dd></div>
+                </dl>
+                <a className="text-link" href={game.source} target="_blank" rel="noreferrer">
+                  Verify game details <ArrowUpRight size={16} />
+                </a>
+              </li>
+            ))}
+          </ul>
         ) : (
-          <>
-            {today.length ? (
-              today.map((g) => (
-                <div key={g.id}>
-                  <p className="score-eyebrow">
-                    {g.isHome
-                      ? 'HOME GAME / ORACLE PARK'
-                      : 'AWAY GAME / NO GAME AT ORACLE PARK'}
-                  </p>
-                  <h3>
-                    {g.isHome ? g.away.replace('St. Louis ', '') : g.home}
-                    <br />
-                    <span>
-                      {g.isHome ? 'AT SAN FRANCISCO' : 'VS SAN FRANCISCO'}
-                    </span>
-                  </h3>
-                  <div className="score-time">
-                    {format(g)} <small>PT · {g.status}</small>
-                  </div>
-                  {g.homeScore !== undefined && (
-                    <p>
-                      {g.away} {g.awayScore} · {g.home} {g.homeScore}
-                    </p>
-                  )}
-                </div>
-              ))
-            ) : (
-              <>
-                <p className="score-eyebrow">{date}</p>
-                <h3>
-                  AN OFF DAY.
-                  <br />
-                  STILL A GREAT CITY.
-                </h3>
-                <p className="small">No Giants game scheduled for this date.</p>
-              </>
-            )}
-            {upcoming.length > 0 && (
-              <div className="upcoming">
-                <p className="score-eyebrow">NEXT AT ORACLE PARK</p>
-                {upcoming.map((g) => (
-                  <p key={g.id}>
-                    <span>
-                      {new Date(g.date + 'T12:00:00').toLocaleDateString(
-                        'en-US',
-                        { month: 'short', day: 'numeric' },
-                      )}{' '}
-                      · {g.away}
-                    </span>
-                    <strong>{format(g)}</strong>
-                  </p>
-                ))}
-              </div>
-            )}
-          </>
+          <p className="small">More tour dates to be announced. Use the official team schedules to plan ahead.</p>
         )}
+        <div className="valkyries-rollout">
+          <p className="score-eyebrow">VALKYRIES / PLAYOFF WATCH</p>
+          <h3>WHEN BALLHALLA CALLS.</h3>
+          <p>
+            We’re planning Valkyries editions around confirmed Chase Center
+            home games. Playoff dates depend on results; departure times will
+            be announced once the game date and tipoff are verified.
+          </p>
+          <a className="text-link" href={VALKYRIES_SCHEDULE} target="_blank" rel="noreferrer">
+            Check Valkyries home games <ArrowUpRight size={16} />
+          </a>
+        </div>
       </div>
     </div>
   );

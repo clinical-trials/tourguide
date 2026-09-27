@@ -1,11 +1,12 @@
 # AI SF Tour business and design files
 
-This collection contains 32 deliverables. The `current` folder contains the completed materials indexed below; `archive` retains earlier drafts and proofs for reference. File names and contents match the delivered originals. `SHA256SUMS` records their checksums.
+The `current` folder contains the materials indexed below; `archive` retains earlier drafts and proofs for reference. `SHA256SUMS` records checksums of the original delivered collection; subsequent planning addenda are identified by date.
 
 ## Current materials
 
 | Material | Download |
 | --- | --- |
+| September 27 basketball rollout: Warriors candidates, Valkyries date holds and proposed Dogpatch-to-Chase Center timing | [Read the rollout](current/AI-SF-Tour-Basketball-Rollout.md) |
 | SF / Fisherman’s Wharf market and pricing review: recommended bands, upper-price tests, demand risk and private economics | [Read the review](current/AI-SF-Tour-Pricing-Market-Review.md) |
 | Pilot launch readiness: verified setup status, owner decisions and Branch B rehearsal sheet | [Read on GitHub](current/AI-SF-Tour-Launch-Readiness.md) |
 | Full business plan: 53 pages including the Wharf market review, pricing ceilings, private economics, $149 pilot, assumptions and goals | [PDF](current/AI-SF-Tour-Full-Business-Plan.pdf) |

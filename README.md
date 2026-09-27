@@ -6,7 +6,9 @@ AI SF Tour — a contemporary San Francisco walking-and-Muni tour website.
 
 **[Open the AI SF Tour website →](https://clinical-trials.github.io/tourguide/)**
 
-The public website is published to GitHub Pages from `main`; ongoing work is also kept on `tourguide`. It includes the animated photography, tour routes, mobile navigation, offline city guide, live Giants schedule and interactive date/price preview. Ticket sales are not open yet.
+The public website is published to GitHub Pages from `main`; ongoing work is also kept on `tourguide`. It includes the animated photography, tour routes, mobile navigation, offline city guide, Warriors/Valkyries game-day planning and interactive date/price preview. Ticket sales are not open yet.
+
+The [September 27 basketball rollout](business/current/AI-SF-Tour-Basketball-Rollout.md) prioritizes Warriors home games and confirmed Valkyries home dates. The website shows a dated shortlist with proposed Dogpatch-to-Chase Center tour times; it is not a live schedule or bookable inventory. Baseball remains a seasonal option.
 
 GitHub Pages hosts static files and cannot run the Stripe or booking database APIs. This build clearly labels planning previews and disables checkout. The separate server build retains the backend for a future ticket-sales launch. `aisftour.com` is the intended custom domain and has not been connected here.
 
@@ -50,7 +52,7 @@ npm run build
 node --test tests/*.test.mjs
 ```
 
-Built with React, TypeScript, Vinext, Tailwind CSS and Cloudflare D1. The site includes a departure calendar, Stripe Checkout integration, verified booking confirmations, calendar downloads and a live Giants schedule. Its visual identity uses pixelated photography, shutter animation and an ink-and-acid-green palette.
+Built with React, TypeScript, Vinext, Tailwind CSS and Cloudflare D1. The site includes a departure calendar, Stripe Checkout integration, verified booking confirmations, calendar downloads and basketball game-day planning. The retained Giants API supports future seasonal use. Its visual identity uses pixelated photography, shutter animation and an ink-and-acid-green palette.
 
 ## GitHub Pages publishing
 
