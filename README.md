@@ -58,7 +58,7 @@ Built with React, TypeScript, Vinext, Tailwind CSS and Cloudflare D1. The site i
 
 The workflow in [`.github/workflows/pages.yml`](.github/workflows/pages.yml) tests both `tourguide` and `main`, and publishes the site when changes are pushed to `main`. To release, fast-forward `main` to the reviewed `tourguide` commit and push it.
 
-One-time repository setup: in **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source. The `github-pages` environment must allow deployments from `main`. The workflow can also deploy while the existing Pages source is the `main` branch; switching the source to GitHub Actions avoids the redundant default README build. If the first run happened before setup, rerun that workflow after enabling Pages.
+Required repository setup: in **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source. The `github-pages` environment must allow deployments from `main`. Do not leave the source set to “Deploy from a branch”: its default README build competes with this workflow and can overwrite the website even when the custom deployment reports success. The deploy job now checks the source and stops with a clear error if it is incorrect. After changing the source, rerun the latest `Publish tour website` workflow for `main`.
 
 ```sh
 npm run build:pages

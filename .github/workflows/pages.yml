@@ -40,6 +40,15 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Require GitHub Actions as the Pages source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pages_build_type=$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq .build_type)
+          if [ "$pages_build_type" != "workflow" ]; then
+            echo "::error::Set Settings > Pages > Build and deployment > Source to GitHub Actions. The branch publisher can overwrite the website with README content."
+            exit 1
+          fi
       - uses: actions/configure-pages@v5
       - name: Deploy website
         id: deployment

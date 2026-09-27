@@ -29,3 +29,5 @@
 ## Verification record
 
 All 41 Node tests passed; TypeScript and the Pages production build passed. Browser checks covered all seven month selections at 375px without horizontal overflow and the desktop layout at 1440px. An independent read-only reviewer matched all 43 home game records against the official NBA source snapshot and found no actionable issues. Both downloads contain 38 tentative tour windows.
+
+Publication diagnosis: commit `4f98732` reached both branches and custom Pages run `36339607683` succeeded, but default branch-publishing run `36339607229` also ran. Public HTTP responses served Jekyll README HTML and returned 404 for the calendar downloads. The browser's older cached app was not reliable deployment evidence. Added a source-setting guard to prevent another misleading successful custom deployment. Finishing publication requires changing repository Pages Source to GitHub Actions and rerunning the main workflow. The available browser is signed out of GitHub; the user has been asked to sign in or change that setting.
