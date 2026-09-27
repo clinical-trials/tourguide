@@ -83,12 +83,16 @@ export default function Games() {
           <p className="score-eyebrow">VALKYRIES / PLAYOFF WATCH</p>
           <h3>WHEN BALLHALLA CALLS.</h3>
           <p>
-            We’re planning Valkyries editions around confirmed Chase Center
-            home games. Playoff dates depend on results; departure times will
-            be announced once the game date and tipoff are verified.
+            Keep the Valkyries in your October plans. The WNBA postseason can
+            run through Saturday, October 31, 2026. Valkyries editions depend
+            on the team advancing and a confirmed Chase Center home game.
+            We’ll announce tour times once the date and tipoff are verified.
           </p>
           <a className="text-link" href={VALKYRIES_SCHEDULE} target="_blank" rel="noreferrer">
             Check Valkyries home games <ArrowUpRight size={16} />
+          </a>
+          <a className="text-link" href="https://www.wnba.com/keydates" target="_blank" rel="noreferrer">
+            WNBA playoff calendar <ArrowUpRight size={16} />
           </a>
         </div>
       </div>
